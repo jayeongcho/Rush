@@ -12,6 +12,8 @@ public class CollectCoin : MonoBehaviour
     {
 
         coinFX.Play();
+        CollectableControl.coinCount += 1;
         this.gameObject.SetActive(false);
+
     }
 }

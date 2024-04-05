@@ -11,6 +11,7 @@ public class GenerateLevel : MonoBehaviour
 
     void Update()
     {
+        //발판 생성 체크
         if(creatingSection == false)
         {
             creatingSection = true; 
@@ -18,6 +19,7 @@ public class GenerateLevel : MonoBehaviour
         }
     }
 
+    //2초마다 새로운 발판 생성
     IEnumerator GenerateSection()
     {
         secNum = Random.Range(0, 3);
