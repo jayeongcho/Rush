@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine;
 
 //Shop Data Holder 상점데이터를 보유하는 클래스
 [System.Serializable] public class CharactersShopData
@@ -14,7 +15,15 @@ using Unity.VisualScripting;
     public List<int> purchasedItemsIndexes = new List<int>();
 }
 
-
+//추가: 레벨
+[System.Serializable]
+public class LevelData
+{
+    public int levelIndex; // 레벨 인덱스
+    public bool unlocked; // 레벨이 잠금 해제되었는지 여부
+    public int starsCollected; // 획득한 별의 수
+    // 필요한 다른 정보들 추가 가능
+}
 
 //Player Data Holder 플레이어 데이터를 보유하는 클래스
 [System.Serializable] public class PlayerData
@@ -25,6 +34,7 @@ using Unity.VisualScripting;
 	//선택한 캐릭터 인덱스
 	public int selectedCharacterIndex = 0;
 	public int selectedItemIndex = 0;
+	
 }
 
 //게임 데이터를 관리하는 정적 클래스
@@ -35,20 +45,64 @@ public static class GameDataManager
     static PlayerData playerData = new PlayerData ();
 	static CharactersShopData charactersShopData= new CharactersShopData ();
     static ItemsShopData ItemsShopData = new ItemsShopData();
+	//레벨
+	private static List<LevelData> levelDataList = new List<LevelData>();
+
     static Character selectedCharacter;
 	static SKillItem selectedSKillItem;
-	
-	//생성자
-	static GameDataManager ()
+    
+
+    //생성자
+    static GameDataManager ()
 	{
 		LoadPlayerData ();
 		LoadCharactersShopData ();
 	}
+    //Level data Methods-------
+    // 레벨 데이터 초기화
+    public static void InitializeLevelData(int totalLevels)
+    {
+        for (int i = 0; i < totalLevels; i++)
+        {
+            LevelData levelData = new LevelData();
+            levelData.levelIndex = i;
+            levelData.unlocked = false; // 초기에는 모든 레벨이 잠금 상태
+            levelData.starsCollected = 0; // 초기에는 별이 획득되지 않은 상태
+            // 필요한 다른 초기화 작업 수행 가능
+            levelDataList.Add(levelData);
+        }
+    }
 
-	//Player Data Methods -----------------------------------------------------------------------------
+    // 특정 레벨의 상태 가져오기
+    public static LevelData GetLevelData(int levelIndex)
+    {
+        return levelDataList[levelIndex];
+    }
 
-	// 선택된 캐릭터 반환
-	public static Character GetSelectedCharacter()
+    // 특정 레벨의 잠금 해제 상태 설정
+    public static void SetLevelUnlocked(int levelIndex, bool unlocked)
+    {
+        levelDataList[levelIndex].unlocked = unlocked;
+    }
+
+    // 특정 레벨의 별 수 설정
+    public static void SetStarsCollected(int levelIndex, int stars)
+    {
+        levelDataList[levelIndex].starsCollected = stars;
+    }
+
+    // 특정 레벨의 별 수 가져오기
+    public static int GetStarsCollected(int levelIndex)
+    {
+        return levelDataList[levelIndex].starsCollected;
+    }
+
+    // 필요한 다른 기능 추가 가능
+
+    //Player Data Methods -----------------------------------------------------------------------------
+
+    // 선택된 캐릭터 반환
+    public static Character GetSelectedCharacter()
 	{
 		return selectedCharacter;
 	}
@@ -68,7 +122,7 @@ public static class GameDataManager
 
         SavePlayerData();
 	}
-
+	
 	//아이템
     public static void SetSelectedItem(SKillItem sk_item, int index)
     {
@@ -78,6 +132,7 @@ public static class GameDataManager
         SavePlayerData();
     }
 
+    
 
     //선택한 캐릭터 인덱스 반환
     public static int GetSelectedCharacterIndex()
@@ -157,7 +212,7 @@ public static class GameDataManager
     {
         return selectedCharacter.speed;
     }
-
+   
     //Items Shop Data Methods -----------------------------------------------------------------------------
 
     //구매한 아이템 추가
@@ -191,6 +246,8 @@ public static class GameDataManager
 		return selectedSKillItem.respawn;
 
     }
+
+	
 
     //상점 데이터 로드    
     static void LoadCharactersShopData ()
