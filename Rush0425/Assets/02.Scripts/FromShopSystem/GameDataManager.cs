@@ -30,7 +30,8 @@ public class LevelData
 { 
 	//보유한 코인 수
 	public int coins = 0;
-	
+    //현재 레벨
+    public int level = 0;
 	//선택한 캐릭터 인덱스
 	public int selectedCharacterIndex = 0;
 	public int selectedItemIndex = 0;
@@ -97,7 +98,7 @@ public static class GameDataManager
         return levelDataList[levelIndex].starsCollected;
     }
 
-    // 필요한 다른 기능 추가 가능
+    //// 필요한 다른 기능 추가 가능
 
     //Player Data Methods -----------------------------------------------------------------------------
 

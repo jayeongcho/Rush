@@ -10,13 +10,16 @@ public class LevelDistance : MonoBehaviour
     public int disRun;
     public bool addingDis = false;
     public float disDelay = 0.35f; //1m를 0.35초마다 돌파
-
+    
     // 별UI
     public Image [] starImages; //별이미지
     public Sprite yellowStarSprite; //노란별
     public Sprite greyStarSprite;//회색별
     public int starsCollected = 0;
     public int starsToCollect = 3;
+
+    //레벨
+    public int level;
 
     void Update()
     {
@@ -40,6 +43,8 @@ public class LevelDistance : MonoBehaviour
         {
             starsCollected++;
             UpdateStarUI();
+            Debug.Log("level"+level);
+            GameDataManager.GetLevelData(level).unlocked = true;
         }
 
         yield return new WaitForSeconds(disDelay);
