@@ -5,15 +5,16 @@ using UnityEngine;
 public class GenerateLevel : MonoBehaviour
 {
     public GameObject[] section;
-    public int zPos = 50; //1section 길이
+    public int zPos = 63; //1section 길이
     public bool creatingSection = false;
     public int secNum;
-
+    public int createTime =3;
     void Update()
     {
         //발판 생성 체크
         if(creatingSection == false)
         {
+            //발판생성
             creatingSection = true; 
             StartCoroutine(GenerateSection());
         }
@@ -23,9 +24,17 @@ public class GenerateLevel : MonoBehaviour
     IEnumerator GenerateSection()
     {
         secNum = Random.Range(0, 3);
-        Instantiate(section[secNum],new Vector3(0,0,zPos),Quaternion.identity);
-        zPos += 50;
-        yield return new WaitForSeconds(2);
+        GameObject newSection = Instantiate(section[secNum],new Vector3(0,0,zPos),Quaternion.identity);
+        
+        zPos += 63; //초기값50
+        yield return new WaitForSeconds(createTime);
         creatingSection = false;
+
+        // 20초 뒤에 생성된 오브젝트 파괴
+        yield return new WaitForSeconds(40f);
+        Destroy(newSection);
     }
+
+
+
 }
