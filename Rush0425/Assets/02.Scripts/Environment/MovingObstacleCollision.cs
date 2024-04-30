@@ -107,17 +107,24 @@ public class MovingObstacleCollision : MonoBehaviour
             playerInRange = false;
             speed = 0f;
 
-            //부딪히면 player 이동멈추고, 해당 컴포넌트들 해제 
+            
+            ////부딪히면 player 이동멈추고, 해당 컴포넌트들 해제 
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
-            thePlayer.GetComponent<Toony_PlayerMove>().enabled = false;
+            //thePlayer.GetComponent<Toony_PlayerMove>().enabled = false;
             //charModel.GetComponent<Animator>().Play("Stumble Backwards");           
-            activeChild.GetComponent<Animator>().Play("Stumble Backwards");
-            levelControl.GetComponent<LevelDistance>().enabled = false;
-            crashThud.Play();
-            mainCam.GetComponent<Animator>().enabled = true;
+            //activeChild.GetComponent<Animator>().Play("Stumble Backwards");
+            //levelControl.GetComponent<LevelDistance>().enabled = false;
+            // crashThud.Play();
+            //mainCam.GetComponent<Animator>().enabled = true;
 
-            //게임끝난화면 실행
-            levelControl.GetComponent<EndRunSequence>().enabled = true;
+            ////게임끝난화면 실행
+            //levelControl.GetComponent<EndRunSequence>().enabled = true;
+
+
+            //부딪히면 player에서 메서드 호출
+            playerMoveScript.Crushed();
+
+            
         }
     }
 }

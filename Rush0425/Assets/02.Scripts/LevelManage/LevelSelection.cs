@@ -10,16 +10,16 @@ public class LevelSelection : MonoBehaviour
     public Sprite starSprite;
 
 
-    //public int levelIndex; // 해당 스크립트가 적용된 오브젝트의 레벨 인덱스
-
-
     // Start is called before the first frame update
     void Start()
     {
-        // 레벨 데이터 초기화
-        // GameDataManager.InitializeLevelData(10); // 예시: 총 10개의 레벨이 있다고 가정
-
+        
+#if UNITY_EDITOR
+        if (Input.GetKey(KeyCode.C))
+            PlayerPrefs.DeleteAll();
+#endif
     }
+
 
     // Update is called once per frame
     void Update()
@@ -74,36 +74,12 @@ public class LevelSelection : MonoBehaviour
         }
     }
 
-    // 레벨 이미지 업데이트
-    //private void UpdateLevelImage()
-    //{
-    //    LevelData levelData = GameDataManager.GetLevelData(levelIndex);
-
-    //    if (!levelData.unlocked) // 잠금 상태
-    //    {
-    //        unlockImage.gameObject.SetActive(true); // 자물쇠 이미지 활성화
-    //        foreach (var star in stars)
-    //        {
-    //            star.SetActive(false); // 별 이미지 비활성화
-    //        }
-    //    }
-    //    else // 잠금 해제 상태
-    //    {
-    //        unlockImage.gameObject.SetActive(false); // 자물쇠 이미지 비활성화
-    //        for (int i = 0; i < levelData.starsCollected; i++)
-    //        {
-    //            stars[i].SetActive(true); // 별 이미지 활성화
-    //            stars[i].GetComponent<Image>().sprite = starSprite; // 별 이미지 스프라이트 설정
-    //        }
-    //    }
-    //}
 
     public void PressSelection(string _LevelName)//When we press this level, we can move to the corresponding Scene to play
     {
         if (unlocked)
-        //if (GameDataManager.GetLevelData(levelIndex).unlocked)
         {
-            Debug.Log(_LevelName);
+
             SceneManager.LoadScene(_LevelName);
         }
     }

@@ -21,9 +21,17 @@ public class LevelDistance : MonoBehaviour
     //레벨
     public int level;
 
+    //성공시
+    public GameObject thePlayer;
+    private Toony_PlayerMove playerMoveScript;
+
+    private void Start()
+    {
+        playerMoveScript = thePlayer.GetComponent<Toony_PlayerMove>();
+    }
     void Update()
     {
-        if (addingDis == false)
+        if (addingDis == false  && Toony_PlayerMove.canMove)
         {
             addingDis = true;
             StartCoroutine(AddingDis());
@@ -39,7 +47,7 @@ public class LevelDistance : MonoBehaviour
         disEndDisplay.GetComponent<Text>().text = "" + disRun; //게임 끝나고 나오는 텍스트
 
         // 별 획득 체크
-        if (disRun % 50 == 0)
+        if (disRun % 10 == 0)
         {
             starsCollected++;
             
@@ -71,6 +79,13 @@ public class LevelDistance : MonoBehaviour
                 // 획득하지 않은 별은 회색으로 유지
                 starImages[i].sprite = greyStarSprite;
             }
+        }
+        // 모든 별을 획득한 경우 메시지 출력
+        if (starsCollected == starsToCollect)
+        {
+            Debug.Log("모든 별을 획득했습니다!");
+           playerMoveScript.ColletedAll();
+
         }
     }
 
