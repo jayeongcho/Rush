@@ -11783,6 +11783,7 @@ MonoBehaviour:
   greyStarSprite: {fileID: 21300000, guid: 36fc331e1cc4e934c8dc4106e00462c8, type: 3}
   starsCollected: 0
   starsToCollect: 3
+  level: 2
 --- !u!114 &1149539998
 MonoBehaviour:
   m_ObjectHideFlags: 0

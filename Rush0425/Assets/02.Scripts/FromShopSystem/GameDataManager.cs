@@ -30,8 +30,7 @@ public class LevelData
 { 
 	//보유한 코인 수
 	public int coins = 0;
-    //현재 레벨
-    public int level = 0;
+   
 	//선택한 캐릭터 인덱스
 	public int selectedCharacterIndex = 0;
 	public int selectedItemIndex = 0;
@@ -59,46 +58,7 @@ public static class GameDataManager
 		LoadPlayerData ();
 		LoadCharactersShopData ();
 	}
-    //Level data Methods-------
-    // 레벨 데이터 초기화
-    public static void InitializeLevelData(int totalLevels)
-    {
-        for (int i = 0; i < totalLevels; i++)
-        {
-            LevelData levelData = new LevelData();
-            levelData.levelIndex = i;
-            levelData.unlocked = false; // 초기에는 모든 레벨이 잠금 상태
-            levelData.starsCollected = 0; // 초기에는 별이 획득되지 않은 상태
-            // 필요한 다른 초기화 작업 수행 가능
-            levelDataList.Add(levelData);
-        }
-    }
-
-    // 특정 레벨의 상태 가져오기
-    public static LevelData GetLevelData(int levelIndex)
-    {
-        return levelDataList[levelIndex];
-    }
-
-    // 특정 레벨의 잠금 해제 상태 설정
-    public static void SetLevelUnlocked(int levelIndex, bool unlocked)
-    {
-        levelDataList[levelIndex].unlocked = unlocked;
-    }
-
-    // 특정 레벨의 별 수 설정
-    public static void SetStarsCollected(int levelIndex, int stars)
-    {
-        levelDataList[levelIndex].starsCollected = stars;
-    }
-
-    // 특정 레벨의 별 수 가져오기
-    public static int GetStarsCollected(int levelIndex)
-    {
-        return levelDataList[levelIndex].starsCollected;
-    }
-
-    //// 필요한 다른 기능 추가 가능
+   
 
     //Player Data Methods -----------------------------------------------------------------------------
 

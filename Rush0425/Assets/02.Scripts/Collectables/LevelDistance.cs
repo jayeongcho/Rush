@@ -42,9 +42,11 @@ public class LevelDistance : MonoBehaviour
         if (disRun % 50 == 0)
         {
             starsCollected++;
+            
+            PlayerPrefs.SetInt("Lv" + level, starsCollected);
+           
             UpdateStarUI();
-            Debug.Log("level"+level);
-            GameDataManager.GetLevelData(level).unlocked = true;
+           
         }
 
         yield return new WaitForSeconds(disDelay);

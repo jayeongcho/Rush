@@ -10,14 +10,15 @@ public class LevelSelection : MonoBehaviour
     public Sprite starSprite;
 
 
-    public int levelIndex; // 해당 스크립트가 적용된 오브젝트의 레벨 인덱스
+    //public int levelIndex; // 해당 스크립트가 적용된 오브젝트의 레벨 인덱스
 
 
     // Start is called before the first frame update
     void Start()
     {
         // 레벨 데이터 초기화
-        GameDataManager.InitializeLevelData(10); // 예시: 총 10개의 레벨이 있다고 가정
+        // GameDataManager.InitializeLevelData(10); // 예시: 총 10개의 레벨이 있다고 가정
+
     }
 
     // Update is called once per frame
@@ -25,52 +26,28 @@ public class LevelSelection : MonoBehaviour
     {
         UpdateLevelImage();
         UpdateLevelStatus();
-
     }
 
     //레벨 가져오기
-    //private void UpdateLevelStatus()
-    //{
-    //    //  if the current lv is 5, the pre should be 4
-    //    int previousLevelNum = int.Parse(gameObject.name) - 1;
-
-    //    if (PlayerPrefs.GetInt("Lv" + previousLevelNum.ToString()) > 0)//If the firts level star is bigger than 0, second level can play
-
-    //    {
-    //        unlocked = true;
-    //    }
-
-
-    //}
-
     private void UpdateLevelStatus()
     {
-        int currLevel = levelIndex;
-        Debug.Log("currLevel" + currLevel);
-        // 이미 잠금 해제된 레벨이면 더 이상 할 필요 없음
-        if (GameDataManager.GetLevelData(currLevel).unlocked)
+        // 레벨 1은 항상 언락되어 있어야 함
+        if (int.Parse(gameObject.name) == 1)
         {
-            Debug.Log("return");
+            unlocked = true;
             return;
         }
 
-        int previousLevel = currLevel - 1;
-        
-        // 이전 레벨이 잠금 해제된 상태라면 현재 레벨을 잠금 해제한다
-        if (GameDataManager.GetLevelData(previousLevel).unlocked)
+        //  if the current lv is 5, the pre should be 4
+        int previousLevelNum = int.Parse(gameObject.name) - 1;
+
+        if (PlayerPrefs.GetInt("Lv" + previousLevelNum.ToString()) > 0)//If the firts level star is bigger than 0, second level can play
         {
-            Debug.Log("previousLevel" + previousLevel);
-            GameDataManager.SetLevelUnlocked(currLevel, true);
             unlocked = true;
         }
 
 
-
     }
-
-
-
-
 
 
     private void UpdateLevelImage()
