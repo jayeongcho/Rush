@@ -14,10 +14,7 @@ public class LevelSelection : MonoBehaviour
     void Start()
     {
         
-#if UNITY_EDITOR
-        if (Input.GetKey(KeyCode.C))
-            PlayerPrefs.DeleteAll();
-#endif
+
     }
 
 
@@ -27,7 +24,10 @@ public class LevelSelection : MonoBehaviour
         UpdateLevelImage();
         UpdateLevelStatus();
     }
-
+   public void Clear()
+    {
+        PlayerPrefs.DeleteAll();
+    }
     //레벨 가져오기
     private void UpdateLevelStatus()
     {

@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class LevelDistance : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class LevelDistance : MonoBehaviour
     public int disRun;
     public bool addingDis = false;
     public float disDelay = 0.35f; //1m를 0.35초마다 돌파
-    
+    public float divNum ;
     // 별UI
     public Image [] starImages; //별이미지
     public Sprite yellowStarSprite; //노란별
@@ -25,9 +26,20 @@ public class LevelDistance : MonoBehaviour
     public GameObject thePlayer;
     private Toony_PlayerMove playerMoveScript;
 
+    //슬라이더
+    public Slider slider;
+    float barMaxValue =100f;
+    public int disRunUI;
+
+    //흔들기
+    public float duration = 3f; // 흔들기 지속 시간
+    public float strength = 0.5f; // 흔들기 강도
+    public int vibrato = 10; // 흔들기 횟수
+
     private void Start()
     {
         playerMoveScript = thePlayer.GetComponent<Toony_PlayerMove>();
+        slider.maxValue = barMaxValue;
     }
     void Update()
     {
@@ -35,8 +47,10 @@ public class LevelDistance : MonoBehaviour
         {
             addingDis = true;
             StartCoroutine(AddingDis());
+            disRunUI += 1;
+            slider.value = disRunUI / divNum;
         }
-
+        
     }
 
     //m마다 거리추가
@@ -47,15 +61,28 @@ public class LevelDistance : MonoBehaviour
         disEndDisplay.GetComponent<Text>().text = "" + disRun; //게임 끝나고 나오는 텍스트
 
         // 별 획득 체크
-        if (disRun % 10 == 0)
+        if (disRun % divNum == 0)
         {
             starsCollected++;
+
             
             PlayerPrefs.SetInt("Lv" + level, starsCollected);
            
             UpdateStarUI();
-           
+            
+
         }
+        if(slider.value != barMaxValue)
+        {
+            
+        }
+        else if (slider.value == barMaxValue)
+        {
+            Debug.Log("");
+            disRunUI = 0;
+            slider.value = 0f;
+        }
+
 
         yield return new WaitForSeconds(disDelay);
         addingDis = false;
@@ -73,17 +100,25 @@ public class LevelDistance : MonoBehaviour
             {
                 // 획득한 별인 경우 노란색으로 변경
                 starImages[i].sprite = yellowStarSprite;
+
             }
             else
             {
                 // 획득하지 않은 별은 회색으로 유지
                 starImages[i].sprite = greyStarSprite;
             }
+
+            //획득시 흔들기
+            Debug.Log("star[i]" + starImages[i]);
+            starImages[i].transform.DOShakePosition(duration, strength, vibrato);
         }
+       
+
         // 모든 별을 획득한 경우 메시지 출력
         if (starsCollected == starsToCollect)
         {
             Debug.Log("모든 별을 획득했습니다!");
+            //별을 모두 모으면 게임종료
            playerMoveScript.ColletedAll();
 
         }

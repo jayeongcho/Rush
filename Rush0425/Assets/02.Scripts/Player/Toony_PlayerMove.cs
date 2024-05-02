@@ -5,7 +5,7 @@ public class Toony_PlayerMove : MonoBehaviour
 {
 
     [SerializeField] GameObject[] characterPrefabs;
-   // [SerializeField] Character character;
+    // [SerializeField] Character character;
     [SerializeField] CharacterShopDatabase characterDB;
     [SerializeField] ObstacleCollision collison;
     public float moveSpeed;
@@ -14,7 +14,7 @@ public class Toony_PlayerMove : MonoBehaviour
 
     public bool isJumping = false;
     public bool comingDown = false;
-    public bool isSlide=false;
+    public bool isSlide = false;
     static public bool isdoubleCoin = false;
     public GameObject playerObject; //게임플레이어
 
@@ -31,7 +31,7 @@ public class Toony_PlayerMove : MonoBehaviour
     public AudioSource crashThud;
     public GameObject mainCam;
     public GameObject levelControl;
-   
+
 
     private void Awake()
     {
@@ -134,8 +134,8 @@ public class Toony_PlayerMove : MonoBehaviour
         if (Input.touchCount > 0)
         {
             // 첫 번째 터치 입력을 가져옵니다.
-             Touch touch = Input.GetTouch(0);
-            
+            Touch touch = Input.GetTouch(0);
+
             // 터치 상태에 따라 다른 동작을 수행합니다.
             switch (touch.phase)
             {
@@ -183,10 +183,10 @@ public class Toony_PlayerMove : MonoBehaviour
 
     IEnumerator SlideSequence()
     {
-        
+
         yield return new WaitForSeconds(1f);
-       isSlide = false;
-               playerObject.GetComponent<Animator>().Play("Standard Run");
+        isSlide = false;
+        playerObject.GetComponent<Animator>().Play("Standard Run");
     }
 
     void CheckSwipe()
@@ -204,7 +204,7 @@ public class Toony_PlayerMove : MonoBehaviour
                 transform.Translate(Vector3.left * 2f);
                 // 왼쪽으로 스와이프한 경우
                 Debug.Log("왼쪽으로 스와이프");
-                
+
             }
             else
             {
@@ -232,18 +232,19 @@ public class Toony_PlayerMove : MonoBehaviour
         }
     }
 
+    //게임종료(별 모았을때)
     public void ColletedAll()
     {
-       this.GetComponent<Toony_PlayerMove>().enabled = false;
-        //방방뛰는걸로바꾸기
+        this.GetComponent<Toony_PlayerMove>().enabled = false;
         playerObject.GetComponent<Animator>().Play("Victory");
-        levelControl.GetComponent<LevelDistance>().enabled=false;
+        levelControl.GetComponent<LevelDistance>().enabled = false;
         crashThud.Play(); //사운드 (바꿔야함!!!)
         //mainCam.GetComponent<Animator>().enabled = true; //카메라 다른애니메이션 넣기!
 
         levelControl.GetComponent<EndRunSequence>().enabled = true;
     }
 
+    //게임종료(부딪혔을때)
     public void Crushed()
     {
         this.GetComponent<Toony_PlayerMove>().enabled = false;
