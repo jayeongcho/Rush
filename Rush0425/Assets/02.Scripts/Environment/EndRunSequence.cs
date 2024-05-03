@@ -30,11 +30,11 @@ public class EndRunSequence : MonoBehaviour
 
         //fadeout실행
         yield return new WaitForSeconds(3);
-        fadeOut.SetActive(true);
+       // fadeOut.SetActive(true);
 
         //씬 전환(MainMenu)
-        yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(1); //레벨화면으로 전환
+       // yield return new WaitForSeconds(2);
+       // SceneManager.LoadScene(1); //레벨화면으로 전환
 
     }
 }

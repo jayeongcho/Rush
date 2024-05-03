@@ -50,6 +50,7 @@ public class MovingObstacleCollision : MonoBehaviour
         //아이템먹으면 콜라이더 비활성/활성        
         if (playerMoveScript.moveSpeed > 9)
         {
+
             DisableCollider();
         }
         else

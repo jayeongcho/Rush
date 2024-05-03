@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SceneControlButton : MonoBehaviour
@@ -7,6 +8,7 @@ public class SceneControlButton : MonoBehaviour
     {
         Next,
         Previous,
+        Present,
         MainMenu,
         Quit
     }
@@ -28,6 +30,9 @@ public class SceneControlButton : MonoBehaviour
             case TargetScene.Next:
                 button.onClick.AddListener(() => SceneController.LoadNextScene());
                 break;
+            case TargetScene.Present:
+                button.onClick.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().name));
+                break;
 
             case TargetScene.Previous:
                 button.onClick.AddListener(() => SceneController.LoadPreviousScene());
@@ -38,7 +43,7 @@ public class SceneControlButton : MonoBehaviour
                 break;
         }
 
-       
+
     }
-   
+
 }

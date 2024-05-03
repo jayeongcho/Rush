@@ -30,8 +30,8 @@ public class GenerateLevel : MonoBehaviour
         yield return new WaitForSeconds(createTime);
         creatingSection = false;
 
-        // 20초 뒤에 생성된 오브젝트 파괴
-        yield return new WaitForSeconds(40f);
+        // 60초 뒤에 생성된 오브젝트 파괴
+        yield return new WaitForSeconds(60f);
         Destroy(newSection);
     }
 

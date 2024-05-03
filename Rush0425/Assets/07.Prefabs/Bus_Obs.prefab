@@ -283,7 +283,6 @@ MonoBehaviour:
   speed: 5
   detectionRange: 20
   thePlayer: {fileID: 0}
-  charModel: {fileID: 0}
   crashThud: {fileID: 0}
   mainCam: {fileID: 0}
   levelControl: {fileID: 0}

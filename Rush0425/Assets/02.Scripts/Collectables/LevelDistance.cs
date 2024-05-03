@@ -19,6 +19,9 @@ public class LevelDistance : MonoBehaviour
     public int starsCollected = 0;
     public int starsToCollect = 3;
 
+    //게임끝나고 나올 별
+    public Image[] EndstarImages; //별이미지 
+
     //레벨
     public int level;
 
@@ -29,7 +32,7 @@ public class LevelDistance : MonoBehaviour
     //슬라이더
     public Slider slider;
     float barMaxValue =100f;
-    public int disRunUI;
+    public float disRunUI;
 
     //흔들기
     public float duration = 3f; // 흔들기 지속 시간
@@ -47,8 +50,7 @@ public class LevelDistance : MonoBehaviour
         {
             addingDis = true;
             StartCoroutine(AddingDis());
-            disRunUI += 1;
-            slider.value = disRunUI / divNum;
+            
         }
         
     }
@@ -74,13 +76,14 @@ public class LevelDistance : MonoBehaviour
         }
         if(slider.value != barMaxValue)
         {
-            
+            disRunUI += 1;
+            slider.value = disRunUI * (barMaxValue/divNum);
         }
         else if (slider.value == barMaxValue)
         {
             Debug.Log("");
-            disRunUI = 0;
-            slider.value = 0f;
+            disRunUI = 1;
+            slider.value = 1f;
         }
 
 
@@ -89,7 +92,7 @@ public class LevelDistance : MonoBehaviour
 
     }
 
-    void UpdateStarUI()
+   public void UpdateStarUI()
     {
 
         //별을 획득한 경우
@@ -100,12 +103,13 @@ public class LevelDistance : MonoBehaviour
             {
                 // 획득한 별인 경우 노란색으로 변경
                 starImages[i].sprite = yellowStarSprite;
-
+                EndstarImages[i].sprite = yellowStarSprite;
             }
             else
             {
                 // 획득하지 않은 별은 회색으로 유지
                 starImages[i].sprite = greyStarSprite;
+                EndstarImages[i].sprite= greyStarSprite;
             }
 
             //획득시 흔들기

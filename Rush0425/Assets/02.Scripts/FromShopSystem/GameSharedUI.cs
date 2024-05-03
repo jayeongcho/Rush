@@ -21,12 +21,15 @@ public class GameSharedUI : MonoBehaviour
 
 	//화면에 동전 수를 나타내는 텍스트 배열
 	[SerializeField] TMP_Text[] coinsUIText;
+	
 
 	//게임 시작시 호출되는 함수
 	void Start ()
 	{
 		//화면에 동전 수를 업데이트
 		UpdateCoinsUIText ();
+		
+		
 	}
 
 	//동전 텍스트를 업데이트 하는 함수
@@ -36,6 +39,7 @@ public class GameSharedUI : MonoBehaviour
 		for (int i = 0; i < coinsUIText.Length; i++) {
 			SetCoinsText (coinsUIText [i], GameDataManager.GetCoins ());
 		}
+				
 	}
 
 	//텍스트에 동전 수를 설정하는 함수
