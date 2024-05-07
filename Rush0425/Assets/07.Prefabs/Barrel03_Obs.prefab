@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4814997037097332926}
   - component: {fileID: -3491800299402794124}
   m_Layer: 0
-  m_Name: Barrel_Obs
+  m_Name: Barrel03_Obs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

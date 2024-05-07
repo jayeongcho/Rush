@@ -44,7 +44,7 @@ public class CharacterItemUI : MonoBehaviour
     //캐릭터 속도 설정
     public void SetCharacterSpeed(float speed)
     {
-        characterSpeedFill.fillAmount = speed/100;
+        characterSpeedFill.fillAmount = speed/10;
     }
 
     //캐릭터 파워 설정

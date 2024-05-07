@@ -23,8 +23,12 @@ public class GenerateLevel : MonoBehaviour
     //2초마다 새로운 발판 생성
     IEnumerator GenerateSection()
     {
-        secNum = Random.Range(0, 3);
-        GameObject newSection = Instantiate(section[secNum],new Vector3(0,0,zPos),Quaternion.identity);
+       // secNum = Random.Range(0, 3);
+
+        // 확률에 따라 발판 선택
+        int selectedSectionIndex = GetRandomSectionIndex();
+       
+        GameObject newSection = Instantiate(section[selectedSectionIndex],new Vector3(0,0,zPos),Quaternion.identity);
         
         zPos += 63; //초기값50
         yield return new WaitForSeconds(createTime);
@@ -35,6 +39,33 @@ public class GenerateLevel : MonoBehaviour
         Destroy(newSection);
     }
 
+    // 발판 확률에 따라 인덱스 선택
+    int GetRandomSectionIndex()
+    {
+        // 발판의 확률 설정 (10%, 30%, 30%, 30%)
+        int[] probabilities = { 10, 30, 30, 30 };
 
+        // 확률에 따라 인덱스 선택
+        int totalProbability = 0;
+        for (int i = 0; i < probabilities.Length; i++)
+        {
+            totalProbability += probabilities[i];
+        }
+
+        int randomValue = Random.Range(0, totalProbability);
+        int accumulatedProbability = 0;
+
+        for (int i = 0; i < probabilities.Length; i++)
+        {
+            accumulatedProbability += probabilities[i];
+            if (randomValue < accumulatedProbability)
+            {
+                return i;
+            }
+        }
+
+        // 만약 여기까지 도달하면 오류이므로 마지막 인덱스 반환
+        return probabilities.Length - 1;
+    }
 
 }

@@ -24,13 +24,13 @@ MonoBehaviour:
     speed: 8
     power: 10.032801
     price: 10
-    isPurchased: 1
+    isPurchased: 0
   - image: {fileID: 21300000, guid: 8a3a3b4af39ca27439d46ebe575c4792, type: 3}
     name: female
     speed: 8
     power: 37.421524
     price: 20
-    isPurchased: 1
+    isPurchased: 0
   - image: {fileID: 21300000, guid: 1cd1130c01adbba46ab016a948e189cf, type: 3}
     name: Police
     speed: 9

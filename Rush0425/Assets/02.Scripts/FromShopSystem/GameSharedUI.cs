@@ -41,12 +41,14 @@ public class GameSharedUI : MonoBehaviour
 			SetCoinsText (coinsUIText [i], GameDataManager.GetCoins ());
 		}
 
-        //동전 텍스트 배열을 반복하여 업데이트
-        for (int i = 0; i < LevelUIText.Length; i++)
-        {
-			SetLevelText(LevelUIText[i], level);
-        }
-
+		if (level != 0)
+		{
+			//동전 텍스트 배열을 반복하여 업데이트
+			for (int i = 0; i < LevelUIText.Length; i++)
+			{
+				SetLevelText(LevelUIText[i], level);
+			}
+		}
     }
 
    

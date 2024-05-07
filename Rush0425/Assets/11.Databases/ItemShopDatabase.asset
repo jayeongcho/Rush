@@ -15,41 +15,33 @@ MonoBehaviour:
   items:
   - image: {fileID: 0}
     name: plane
-    info: plane
     getcoin: 10
     speed: 1
-    char_size: 1
     price: 0
     respawn: 0
     isPurchased: 1
     itemObject: {fileID: 0}
-  - image: {fileID: 21300000, guid: 856b417795b23834d940c455fa0e0fa2, type: 3}
-    name: double
-    info: double
+  - image: {fileID: 21300000, guid: 58c41f1e4407b83469a93f157dbd63f2, type: 3}
+    name: Double Coin
     getcoin: 20
     speed: 1
-    char_size: 1
     price: 100
     respawn: 0
-    isPurchased: 1
+    isPurchased: 0
     itemObject: {fileID: 0}
-  - image: {fileID: 21300000, guid: d2e3ba6508ab8f245a54d88c1cbf5073, type: 3}
-    name: speed
-    info: speed
+  - image: {fileID: 21300000, guid: 283454bcbd9014b4b8eb79e8b7cda2d9, type: 3}
+    name: Speed
     getcoin: 10
     speed: 30
-    char_size: 1
     price: 100
     respawn: 0
-    isPurchased: 1
+    isPurchased: 0
     itemObject: {fileID: 0}
-  - image: {fileID: 0}
-    name: respawn
-    info: respawn
+  - image: {fileID: 21300000, guid: f40f4560c9fc8a44298212fa99f45473, type: 3}
+    name: Respawn
     getcoin: 10
     speed: 1
-    char_size: 1
     price: 100
     respawn: 1
-    isPurchased: 1
+    isPurchased: 0
     itemObject: {fileID: 0}

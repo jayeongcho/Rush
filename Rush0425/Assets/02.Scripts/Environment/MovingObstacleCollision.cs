@@ -102,7 +102,7 @@ public class MovingObstacleCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (activeChild != null)
+        if (activeChild != null && other.CompareTag("Player"))
         {
             //πˆΩ∫¿Ãµø ∏ÿ√„ 
             playerInRange = false;

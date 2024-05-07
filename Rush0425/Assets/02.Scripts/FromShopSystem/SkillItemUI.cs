@@ -14,7 +14,7 @@ public class SkillItemUI : MonoBehaviour
     [Space(20f)] //그냥 공간생성
     [SerializeField] Image skillImage;
     [SerializeField] TMP_Text skillNameText;
-    [SerializeField] TMP_Text skillInfoText;
+   // [SerializeField] TMP_Text skillInfoText;
     [SerializeField] TMP_Text skillSpeedText;
     // [SerializeField] Image skillSpeedFill;
     //[SerializeField] Image skillPowerFill;
@@ -45,10 +45,10 @@ public class SkillItemUI : MonoBehaviour
     {
         skillNameText.text = name;
     }
-    public void SetSkillInfo(string info)
-    {
-        skillInfoText.text = info;
-    }
+    //public void SetSkillInfo(string info)
+    //{
+    //    skillInfoText.text = info;
+    //}
 
     public void SetSkillSpeed(float speed)
     {

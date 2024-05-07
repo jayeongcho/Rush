@@ -1,9 +1,7 @@
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
-using DG.Tweening;
-using UnityEngine.TextCore.Text;
 
 
 public class ItemShopUI : MonoBehaviour
@@ -17,7 +15,7 @@ public class ItemShopUI : MonoBehaviour
     [SerializeField] Transform ShopMenu;
     [SerializeField] Transform ShopItemsContainer;
     [SerializeField] GameObject itemPrefab;
-   
+
     [Space(20)]
     [SerializeField] ItemShopDatabase skillitemDB;
     [SerializeField] CharacterShopDatabase characterDB;
@@ -111,10 +109,11 @@ public class ItemShopUI : MonoBehaviour
 
             //Add information to the UI( one item)
             uiItem.SetSkillName(skillitem.name);
-            uiItem.SetSkillInfo(skillitem.info);
+            //  uiItem.SetSkillInfo(skillitem.info);
             uiItem.SetSkillImage(skillitem.image);
             uiItem.SetSkillSpeed(skillitem.speed);
-           // uiItem.SetSkillPower(skillitem.power);
+
+            // uiItem.SetSkillPower(skillitem.power);
             uiItem.SetSkillPrice(skillitem.price);
 
 
@@ -135,11 +134,11 @@ public class ItemShopUI : MonoBehaviour
 
             //Resize Item Container
             ShopItemsContainer.GetComponent<RectTransform>().sizeDelta =
-                Vector2.up * ((itemHeight + itemSpacing) * skillitemDB.ItemsCount+ itemSpacing);
+                Vector2.up * ((itemHeight + itemSpacing) * skillitemDB.ItemsCount + itemSpacing);
 
         }
     }
-    
+
     void OnItemSelected(int index)
     {
         //Selected item inthe UI UI에서 선택된 아이템
@@ -152,15 +151,15 @@ public class ItemShopUI : MonoBehaviour
         GameDataManager.SetSelectedItem(skillitemDB.GetItem(index), index);
 
         //ChangePlayerSkin
-       // ChangePlayerSkin();
+        // ChangePlayerSkin();
     }
     void SelectItemUI(int itemIndex)
     {
         previousSelectedItemIndex = newSelectedItemIndex;
         newSelectedItemIndex = itemIndex;
 
-         SkillItemUI previousUiItem =  SK_GetItemUI(previousSelectedItemIndex);
-         SkillItemUI newUiItem =  SK_GetItemUI(newSelectedItemIndex);
+        SkillItemUI previousUiItem = SK_GetItemUI(previousSelectedItemIndex);
+        SkillItemUI newUiItem = SK_GetItemUI(newSelectedItemIndex);
 
         previousUiItem.DeselectedItem();
         newUiItem.SelectItem();
@@ -182,7 +181,7 @@ public class ItemShopUI : MonoBehaviour
 
         //캐릭터정보 데이터베이스에서 가져오기 (코인필요)
         Character character = characterDB.GetCharacter(index);
-      
+
 
 
         //코인 있을때
