@@ -31,10 +31,10 @@ public class LevelData
 	//보유한 코인 수
 	public int coins = 0;
    
-	//선택한 캐릭터 인덱스
-	public int selectedCharacterIndex = 0;
+    //선택한 캐릭터 인덱스
+    public int selectedCharacterIndex = 0;
 	public int selectedItemIndex = 0;
-	
+ 
 }
 
 //게임 데이터를 관리하는 정적 클래스
@@ -50,7 +50,7 @@ public static class GameDataManager
 
     static Character selectedCharacter;
 	static SKillItem selectedSKillItem;
-    
+	
 
     //생성자
     static GameDataManager ()
@@ -116,9 +116,12 @@ public static class GameDataManager
 	//코인 추가
 	public static void AddCoins (int amount)
 	{
-		playerData.coins += amount;
+     
+        playerData.coins += amount;
 		SavePlayerData ();
 	}
+
+	
 
 	//쓸수 있는 코인
 	public static bool CanSpendCoins (int amount)

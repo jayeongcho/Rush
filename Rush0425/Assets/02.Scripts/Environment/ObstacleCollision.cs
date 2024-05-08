@@ -66,28 +66,50 @@ public class ObstacleCollision : MonoBehaviour
     {
 
 
-        if (!ItemProperties.getRespawnItem&&activeChild != null&& !isDie)
+        /*if (!ItemProperties.getRespawnItem&&activeChild != null&& !isDie)
+        //{
+        //    isDie = true;
+        //    //부딪히면 player 이동멈추고, 해당 컴포넌트들 해제 
+        //    this.gameObject.GetComponent<BoxCollider>().enabled = false;
+        //    thePlayer.GetComponent<Toony_PlayerMove>().enabled = false;
+        //    // charModel.GetComponent<Animator>().Play("Stumble Backwards");
+        //    activeChild.GetComponent<Animator>().Play("Stumble Backwards");
+        //    levelControl.GetComponent<LevelDistance>().enabled = false;
+        //    crashThud.Play();
+        //    mainCam.GetComponent<Animator>().enabled = true;
+
+        //    //게임끝난화면 실행
+        //    levelControl.GetComponent<EndRunSequence>().enabled = true;
+        //    playerPosition = thePlayer.transform.position;
+
+
+        //}*/
+        if (!ItemProperties.getRespawnItem && activeChild != null && !isDie && other.CompareTag("Player"))
         {
-            isDie = true;
-            //부딪히면 player 이동멈추고, 해당 컴포넌트들 해제 
+          
+
+            ////부딪히면 player 이동멈추고, 해당 컴포넌트들 해제 
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
-            thePlayer.GetComponent<Toony_PlayerMove>().enabled = false;
-            // charModel.GetComponent<Animator>().Play("Stumble Backwards");
-            activeChild.GetComponent<Animator>().Play("Stumble Backwards");
-            levelControl.GetComponent<LevelDistance>().enabled = false;
-            crashThud.Play();
-            mainCam.GetComponent<Animator>().enabled = true;
+            //thePlayer.GetComponent<Toony_PlayerMove>().enabled = false;
+            //charModel.GetComponent<Animator>().Play("Stumble Backwards");           
+            //activeChild.GetComponent<Animator>().Play("Stumble Backwards");
+            //levelControl.GetComponent<LevelDistance>().enabled = false;
+            // crashThud.Play();
+            //mainCam.GetComponent<Animator>().enabled = true;
 
-            //게임끝난화면 실행
-            levelControl.GetComponent<EndRunSequence>().enabled = true;
-            playerPosition = thePlayer.transform.position;
+            ////게임끝난화면 실행
+            //levelControl.GetComponent<EndRunSequence>().enabled = true;
 
-             
+
+            //부딪히면 player에서 메서드 호출
+            playerMoveScript.Crushed();
+
+
         }
 
 
         //부활하기
-        if(ItemProperties.getRespawnItem && activeChild != null && !isDie)
+        if (ItemProperties.getRespawnItem && activeChild != null && !isDie)
         
         {
             Debug.Log("ItemProperties.getRespawnItem" + ItemProperties.getRespawnItem.ToString());

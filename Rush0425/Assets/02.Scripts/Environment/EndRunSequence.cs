@@ -22,8 +22,15 @@ public class EndRunSequence : MonoBehaviour
 
     IEnumerator EndSequence()
     {
+        //게임종료시 코인저장됨
+        GameDataManager.AddCoins(CollectableControl.coinCount);
+        Debug.Log("GameDataManager.GetCoins()" + GameDataManager.GetCoins());
+        Debug.Log("CollectableControl.coinCount" + CollectableControl.coinCount);
+       
+        
         yield return new WaitForSeconds(3);
         //화면에 표시중인 코인,거리 끄기
+                    
         liveCoins.SetActive(false);
         liveDis.SetActive(false);
         endScreen.SetActive(true);

@@ -44,6 +44,7 @@ public class CharacterShopUI : MonoBehaviour
     [SerializeField] ParticleSystem purchaseFx;
     [SerializeField] Transform purchaseFxPos;
     [SerializeField] TMP_Text noEnoughCoinsText;
+    [SerializeField] AudioSource purchaseSound;
 
     int newSelectedItemIndex = 0;
     int previousSelectedItemIndex = 0;
@@ -230,6 +231,7 @@ public class CharacterShopUI : MonoBehaviour
             GameDataManager.SpendCoins(character.price);
             //Play purchase Fx
             purchaseFx.Play();
+            purchaseSound.Play();
 
             //Updata Coins UI text
             GameSharedUI.Instance.UpdateCoinsUIText();

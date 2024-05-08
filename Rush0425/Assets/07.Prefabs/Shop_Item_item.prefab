@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.35985267, g: 0.3304112, b: 0.9339623, a: 1}
+  m_Color: {r: 0.1882353, g: 0.16862746, b: 0.48235294, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sk_itemNotSelctedColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 0.89411765}
-  sk_itemSelectedColor: {r: 0.18636353, g: 0.17021182, b: 0.4811321, a: 1}
+  sk_itemSelectedColor: {r: 0.36078432, g: 0.32941177, b: 0.9333334, a: 1}
   skillImage: {fileID: 7650235984355160306}
   skillNameText: {fileID: 3120230066537952819}
   skillSpeedText: {fileID: 6257371618128985844}

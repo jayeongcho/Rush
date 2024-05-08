@@ -247,6 +247,7 @@ public class Toony_PlayerMove : MonoBehaviour
     //게임종료(별 모았을때)
     public void ColletedAll()
     {
+               
         this.GetComponent<Toony_PlayerMove>().enabled = false;
         playerObject.GetComponent<Animator>().Play("Victory");
         levelControl.GetComponent<LevelDistance>().enabled = false;
@@ -259,6 +260,8 @@ public class Toony_PlayerMove : MonoBehaviour
     //게임종료(부딪혔을때)
     public void Crushed()
     {
+
+      
         this.GetComponent<Toony_PlayerMove>().enabled = false;
         playerObject.GetComponent<Animator>().Play("Stumble Backwards");
         levelControl.GetComponent<LevelDistance>().enabled = false;
@@ -266,5 +269,6 @@ public class Toony_PlayerMove : MonoBehaviour
         mainCam.GetComponent<Animator>().enabled = true;
 
         levelControl.GetComponent<EndRunSequence>().enabled = true;
+        Debug.Log("crused");
     }
 }

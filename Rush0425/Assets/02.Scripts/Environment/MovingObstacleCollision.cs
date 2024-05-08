@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,7 +17,14 @@ public class MovingObstacleCollision : MonoBehaviour
     public GameObject mainCam;
     public GameObject levelControl;
     GameObject activeChild = null;
+    
+    public bool isDie = false;
     BoxCollider boxcollider;
+
+    Vector3 playerPosition;
+    Vector3 offset = new Vector3(0, 0, 3f);
+
+
 
     void Start()
     {
@@ -102,13 +110,19 @@ public class MovingObstacleCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (activeChild != null && other.CompareTag("Player"))
+        if (other.CompareTag("Wall"))
+        {
+            Debug.Log("WALL");
+            speed = 0;
+        }
+
+        if (activeChild != null && !isDie && other.CompareTag("Player"))
         {
             //버스이동 멈춤 
             playerInRange = false;
             speed = 0f;
 
-            
+            isDie = true;
             ////부딪히면 player 이동멈추고, 해당 컴포넌트들 해제 
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
             //thePlayer.GetComponent<Toony_PlayerMove>().enabled = false;
@@ -121,11 +135,59 @@ public class MovingObstacleCollision : MonoBehaviour
             ////게임끝난화면 실행
             //levelControl.GetComponent<EndRunSequence>().enabled = true;
 
-
+            
             //부딪히면 player에서 메서드 호출
             playerMoveScript.Crushed();
 
-            
+            //부활하기
+            if (ItemProperties.getRespawnItem && activeChild != null && !isDie)
+
+            {
+                Debug.Log("ItemProperties.getRespawnItem" + ItemProperties.getRespawnItem.ToString());
+                Respawn();
+                ItemProperties.getRespawnItem = false;
+            }
         }
+       
+    }
+    public void Respawn()
+    {
+        if (activeChild != null)
+        {
+            Debug.Log("ObstacleCOllision's Respawn");
+            //부딪히면 player 이동멈추고, 해당 컴포넌트들 해제 
+            // this.gameObject.GetComponent<BoxCollider>().enabled = false;
+            thePlayer.GetComponent<Toony_PlayerMove>().enabled = false;
+            // charModel.GetComponent<Animator>().Play("Stumble Backwards");
+            activeChild.GetComponent<Animator>().Play("Stumble Backwards");
+            levelControl.GetComponent<LevelDistance>().enabled = false;
+            crashThud.Play();
+            mainCam.GetComponent<Animator>().enabled = true;
+
+            Invoke("InvokeRespawn", 3f);
+
+
+        }
+    }
+    void InvokeRespawn()
+    {
+
+        // this.gameObject.GetComponent<BoxCollider>().enabled = true;
+        thePlayer.GetComponent<Toony_PlayerMove>().enabled = true;
+        StartCoroutine(charactercontroller());
+        activeChild.GetComponent<Animator>().Play("Standard Run"); //다시 뛰기
+        levelControl.GetComponent<LevelDistance>().enabled = true;
+
+        mainCam.GetComponent<Animator>().enabled = false;
+        playerPosition = thePlayer.transform.position + offset;
+        thePlayer.transform.position = playerPosition;
+
+    }
+
+    IEnumerator charactercontroller()
+    {
+        thePlayer.GetComponent<CharacterController>().enabled = false;
+        yield return new WaitForSeconds(1f);
+        thePlayer.GetComponent<CharacterController>().enabled = true;
     }
 }

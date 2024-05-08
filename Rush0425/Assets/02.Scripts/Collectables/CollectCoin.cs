@@ -22,22 +22,23 @@ public class CollectCoin : MonoBehaviour
 
 
             coinFX.Play();
-            // CollectableControl.coinCount += 1;
+            //레벨ui
+             CollectableControl.coinCount += skillitem.doblecoin;
             coinFX.Play();
-            Debug.Log("skillitem.getcoin" + skillitem.doblecoin);
-            GameDataManager.AddCoins(skillitem.doblecoin);  //선택한 아이템별로 코인 값이 바뀜
-
-            GameSharedUI.Instance.UpdateCoinsUIText();
+            Debug.Log("skillitem.doblecoin" + skillitem.doblecoin);
+            //GameDataManager.AddCoins(skillitem.doblecoin);  //선택한 아이템별로 코인 값이 바뀜
+            //전체코인ui
+           // GameSharedUI.Instance.UpdateCoinsUIText();
             this.gameObject.SetActive(false);
         }
 
             else
         {
             coinFX.Play();
-            // collectablecontrol.coincount += 1;
+            CollectableControl.coinCount += 10;
 
-            GameDataManager.AddCoins(10);
-            GameSharedUI.Instance.UpdateCoinsUIText();
+            //GameDataManager.AddCoins(10);
+           // GameSharedUI.Instance.UpdateCoinsUIText();
             this.gameObject.SetActive(false); //코인 사라지게하기
         }
 

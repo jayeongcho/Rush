@@ -39,6 +39,7 @@ public class ItemShopUI : MonoBehaviour
     [SerializeField] ParticleSystem purchaseFx;
     [SerializeField] Transform purchaseFxPos;
     [SerializeField] TMP_Text noEnoughCoinsText;
+    [SerializeField] AudioSource purchaseSound;
 
     int newSelectedItemIndex = 0;
     int previousSelectedItemIndex = 0;
@@ -190,7 +191,8 @@ public class ItemShopUI : MonoBehaviour
             //Proceed with purchase operation (코인소비)
             GameDataManager.SpendCoins(character.price);
             //Play purchase Fx
-            //purchaseFx.Play();
+            purchaseFx.Play();
+            purchaseSound.Play();
 
             //Updata Coins UI text
             GameSharedUI.Instance.UpdateCoinsUIText();
@@ -206,7 +208,7 @@ public class ItemShopUI : MonoBehaviour
         else //코인부족시 실행
         {
             //No enough coins.
-            //AnimateNoMoreCoinsText();
+            AnimateNoMoreCoinsText();
 
             //item shake
             sk_uiItem.AnimateShakeItem();
@@ -214,6 +216,20 @@ public class ItemShopUI : MonoBehaviour
     }
 
     //코인부족시 나오는 효과
+    void AnimateNoMoreCoinsText()
+    {
+        //Complete animations (if it'w naming)
+        noEnoughCoinsText.transform.DOComplete();
+        noEnoughCoinsText.DOComplete();
+
+        //Shaking Text
+        noEnoughCoinsText.transform.DOShakePosition(3f, new Vector3(5f, 0f, 0f), 10, 0);
+        noEnoughCoinsText.DOFade(1f, 3f).From(0f).OnComplete(() =>
+        {
+            noEnoughCoinsText.DOFade(0f, 1f);
+        });
+
+    }
     void AddShopEvents()
     {
         openShopButton.onClick.RemoveAllListeners();
