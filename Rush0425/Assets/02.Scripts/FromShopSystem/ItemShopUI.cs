@@ -109,7 +109,7 @@ public class ItemShopUI : MonoBehaviour
 
             //Add information to the UI( one item)
             uiItem.SetSkillName(skillitem.name);
-            //  uiItem.SetSkillInfo(skillitem.info);
+            uiItem.SetSkillInfo(skillitem.info);
             uiItem.SetSkillImage(skillitem.image);
             uiItem.SetSkillSpeed(skillitem.speed);
 

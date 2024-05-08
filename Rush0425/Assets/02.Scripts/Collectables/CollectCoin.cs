@@ -24,8 +24,8 @@ public class CollectCoin : MonoBehaviour
             coinFX.Play();
             // CollectableControl.coinCount += 1;
             coinFX.Play();
-            Debug.Log("skillitem.getcoin" + skillitem.getcoin);
-            GameDataManager.AddCoins(skillitem.getcoin);  //선택한 아이템별로 코인 값이 바뀜
+            Debug.Log("skillitem.getcoin" + skillitem.doblecoin);
+            GameDataManager.AddCoins(skillitem.doblecoin);  //선택한 아이템별로 코인 값이 바뀜
 
             GameSharedUI.Instance.UpdateCoinsUIText();
             this.gameObject.SetActive(false);

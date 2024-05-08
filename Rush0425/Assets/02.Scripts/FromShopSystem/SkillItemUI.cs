@@ -16,6 +16,7 @@ public class SkillItemUI : MonoBehaviour
     [SerializeField] TMP_Text skillNameText;
    // [SerializeField] TMP_Text skillInfoText;
     [SerializeField] TMP_Text skillSpeedText;
+    [SerializeField] TMP_Text skillInfoText;
     // [SerializeField] Image skillSpeedFill;
     //[SerializeField] Image skillPowerFill;
     [SerializeField] TMP_Text skillPriceText;
@@ -45,16 +46,17 @@ public class SkillItemUI : MonoBehaviour
     {
         skillNameText.text = name;
     }
-    //public void SetSkillInfo(string info)
-    //{
-    //    skillInfoText.text = info;
-    //}
+    public void SetSkillInfo(string info)
+    {
+        skillInfoText.text = info;
+    }
 
     public void SetSkillSpeed(float speed)
     {
         skillSpeedText.text = speed.ToString();
     }
 
+  
 
     //캐릭터 가격 설정
     public void SetSkillPrice(int price)

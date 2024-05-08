@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3453700470176589031
 RectTransform:
   m_ObjectHideFlags: 0
@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Speed
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b89dacc8648e1f443902f469f7380e81, type: 2}
-  m_sharedMaterial: {fileID: -1970440432636541404, guid: b89dacc8648e1f443902f469f7380e81, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0b41974f41a6cfd41bb0fd3ebd8514fd, type: 2}
+  m_sharedMaterial: {fileID: 4771817982268528182, guid: 0b41974f41a6cfd41bb0fd3ebd8514fd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,13 +93,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CharacterName
+  m_text: ItemName
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 10c6805121bc9d64180d561e9f6cb26d, type: 2}
   m_sharedMaterial: {fileID: 1446727991882444632, guid: 10c6805121bc9d64180d561e9f6cb26d, type: 2}
@@ -334,10 +334,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Get Double Coin
+  m_text: "\uB3C4\uB808\uBBF8\uBBF8\uBBF8\uBBF8"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b89dacc8648e1f443902f469f7380e81, type: 2}
-  m_sharedMaterial: {fileID: -1970440432636541404, guid: b89dacc8648e1f443902f469f7380e81, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0b41974f41a6cfd41bb0fd3ebd8514fd, type: 2}
+  m_sharedMaterial: {fileID: 4771817982268528182, guid: 0b41974f41a6cfd41bb0fd3ebd8514fd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -361,13 +361,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -514,7 +514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 2.0822, y: 15}
+  m_AnchoredPosition: {x: 2.082199, y: 15}
   m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &7142586723033691938
@@ -796,15 +796,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16415983, g: 0.2435793, b: 0.2924528, a: 0.72156864}
+  m_Color: {r: 0.35985267, g: 0.3304112, b: 0.9339623, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 447740951, guid: 6d1a2570067e3ae4cb5c72a2bca3b8d5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -884,12 +884,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3e3bd90408e3fd4a9d1d1bff775d009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sk_itemNotSelctedColor: {r: 0, g: 0, b: 0, a: 0}
-  sk_itemSelectedColor: {r: 0.11160554, g: 0.2914507, b: 0.41509432, a: 1}
+  sk_itemNotSelctedColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 0.89411765}
+  sk_itemSelectedColor: {r: 0.18636353, g: 0.17021182, b: 0.4811321, a: 1}
   skillImage: {fileID: 7650235984355160306}
   skillNameText: {fileID: 3120230066537952819}
-  skillInfoText: {fileID: 2092985407536251472}
   skillSpeedText: {fileID: 6257371618128985844}
+  skillInfoText: {fileID: 2092985407536251472}
   skillPriceText: {fileID: 634820539008450744}
   skillPurchaseButton: {fileID: 3796073171591699711}
   itemButton: {fileID: 898247413895789671}
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 856b417795b23834d940c455fa0e0fa2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b88771d610c6ff84aa34c7375291027a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

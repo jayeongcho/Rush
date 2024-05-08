@@ -53,7 +53,7 @@ public class ItemProperties : MonoBehaviour
         this.gameObject.SetActive(false); //먹은 오브젝트 사라지게하기
 
         //더블코인
-        if (skills.getcoin > 10)
+        if (skills.doblecoin > 10)
         {
             // 5초 후에 코인 비활성화 메서드 호출
             Invoke("DeactivateAllChildren", itemTime);

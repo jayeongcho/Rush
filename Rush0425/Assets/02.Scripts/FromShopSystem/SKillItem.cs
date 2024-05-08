@@ -5,11 +5,12 @@ using UnityEngine;
 {
     public Sprite image;
     public string name;
-    //public string info;
-    public int getcoin;//코인 2배
+    public string info;
+   
+    public int doblecoin;//코인 2배
+   
     public float speed;//스피드
-    //public int char_size; //캐릭터 사이즈
-
+   
     public int price;
 
 
