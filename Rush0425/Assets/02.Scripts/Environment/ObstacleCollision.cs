@@ -86,8 +86,6 @@ public class ObstacleCollision : MonoBehaviour
         //}*/
         if (!ItemProperties.getRespawnItem && activeChild != null && !isDie && other.CompareTag("Player"))
         {
-          
-
             ////부딪히면 player 이동멈추고, 해당 컴포넌트들 해제 
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
             //thePlayer.GetComponent<Toony_PlayerMove>().enabled = false;

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -81,8 +82,10 @@ public class MovingObstacleCollision : MonoBehaviour
             if (collider.CompareTag("Player"))
             {
                 playerInRange = true;
+                Debug.Log("playerInRange"+playerInRange);
                 break;
             }
+           
         }
     }
 
@@ -108,13 +111,9 @@ public class MovingObstacleCollision : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 
+    //충돌 발생시 호출되는 함수
     private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Wall"))
-        {
-            Debug.Log("WALL");
-            speed = 0;
-        }
+    { 
 
         if (activeChild != null && !isDie && other.CompareTag("Player"))
         {
@@ -135,7 +134,7 @@ public class MovingObstacleCollision : MonoBehaviour
             ////게임끝난화면 실행
             //levelControl.GetComponent<EndRunSequence>().enabled = true;
 
-            
+
             //부딪히면 player에서 메서드 호출
             playerMoveScript.Crushed();
 
@@ -148,7 +147,14 @@ public class MovingObstacleCollision : MonoBehaviour
                 ItemProperties.getRespawnItem = false;
             }
         }
-       
+
+        if (other.CompareTag("Wall"))
+        {
+            speed =0f;
+           
+        }
+
+
     }
     public void Respawn()
     {

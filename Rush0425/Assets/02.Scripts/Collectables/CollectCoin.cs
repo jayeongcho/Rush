@@ -7,7 +7,7 @@ public class CollectCoin : MonoBehaviour
     public AudioSource coinFX; //소리효과
     [SerializeField] ItemShopDatabase itemsDB;
 
-    [SerializeField] GameObject itemObj;
+    
    // private bool isProcessing = false; // 처리 중인지 여부를 나타내는 플래그
 
   
