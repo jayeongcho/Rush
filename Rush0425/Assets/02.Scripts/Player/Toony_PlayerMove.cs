@@ -124,7 +124,7 @@ public class Toony_PlayerMove : MonoBehaviour
 
         //모바일
         // 터치 입력의 개수를 확인합니다.
-        if (Input.touchCount > 0 && canMove==true)
+        if (Input.touchCount > 0 && canMove==true )
         {
             // 첫 번째 터치 입력을 가져옵니다.
             Touch touch = Input.GetTouch(0);
@@ -151,12 +151,12 @@ public class Toony_PlayerMove : MonoBehaviour
         }
 
         // 마우스 입력 처리
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && canMove == true)
         {
             fingerDownPosition = Input.mousePosition;
             isSwiping = true;
         }
-        else if (Input.GetMouseButtonUp(0))
+        else if (Input.GetMouseButtonUp(0) && canMove == true)
         {
             fingerUpPosition = Input.mousePosition;
             CheckSwipe();

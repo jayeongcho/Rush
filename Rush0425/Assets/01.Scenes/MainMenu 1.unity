@@ -6020,8 +6020,6 @@ MonoBehaviour:
   coinsUIText:
   - {fileID: 1536330171}
   - {fileID: 1279836196}
-  LevelUIText: []
-  level: 0
 --- !u!4 &190323443 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: bdd8b59fd28ade14d951aeeb4c9644d0, type: 3}
@@ -10832,7 +10830,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d0440e1e7ebf542a1884646f52220a69, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f42b0e972d1e0b343bfdbd66b205f08f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11031,7 +11029,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 37d037ddc88c1ff4c8a16446355c95d9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 90eae78e8ce85a849b5b0ca11b2de641, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
@@ -17238,7 +17236,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d0440e1e7ebf542a1884646f52220a69, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f42b0e972d1e0b343bfdbd66b205f08f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
