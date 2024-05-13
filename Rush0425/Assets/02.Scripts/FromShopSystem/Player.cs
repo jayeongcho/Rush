@@ -90,21 +90,21 @@ public class Player : MonoBehaviour
     {
         string tag = other.collider.tag;
 
-        if (tag.Equals("coin"))
-        {
-            //Add Coins 
-            GameDataManager.AddCoins(32);
-            Debug.Log("Addcoins");
+//        if (tag.Equals("coin"))
+//        {
+//            //Add Coins 
+//            GameDataManager.AddCoins(32);
+//            Debug.Log("Addcoins");
            
-            // Cheating(while moving hold key "C" to get extra coins) C키를 누르면 콬인 더 생성
-#if UNITY_EDITOR
-            if (Input.GetKey(KeyCode.C))
-                GameDataManager.AddCoins(179);
-#endif
+//            // Cheating(while moving hold key "C" to get extra coins) C키를 누르면 콬인 더 생성
+//#if UNITY_EDITOR
+//            if (Input.GetKey(KeyCode.C))
+//                GameDataManager.AddCoins(179);
+//#endif
 
-            GameSharedUI.Instance.UpdateCoinsUIText();
+//            GameSharedUI.Instance.UpdateCoinsUIText();
 
-            Destroy(other.gameObject);
-        }
+//            Destroy(other.gameObject);
+//        }
     }
 }

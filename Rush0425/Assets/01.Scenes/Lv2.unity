@@ -1016,7 +1016,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 520, y: -940}
+  m_AnchoredPosition: {x: 495.53796, y: -1046.1357}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &44536494
@@ -2172,7 +2172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c33fe8a9c4498a4c995f0da4765f49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: 2
+  targetScene: 3
 --- !u!114 &93718583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4508,7 +4508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 520, y: -760}
+  m_AnchoredPosition: {x: 495.53796, y: -866.13574}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &224889587
@@ -4605,7 +4605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c33fe8a9c4498a4c995f0da4765f49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: 3
+  targetScene: 4
 --- !u!4 &225509164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: bdd8b59fd28ade14d951aeeb4c9644d0, type: 3}
@@ -9140,7 +9140,7 @@ Transform:
   m_GameObject: {fileID: 544388680}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.59, z: -24.9}
+  m_LocalPosition: {x: 0, y: 0.51, z: -24.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -11501,8 +11501,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1977021654}
+  m_Children: []
   m_Father: {fileID: 998334597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
@@ -18417,6 +18416,7 @@ RectTransform:
   - {fileID: 686649589}
   - {fileID: 277034915}
   - {fileID: 670714800}
+  - {fileID: 1977021654}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -26820,7 +26820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 520, y: -1120}
+  m_AnchoredPosition: {x: 495.53796, y: -1226.1357}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1469380415
@@ -26917,7 +26917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c33fe8a9c4498a4c995f0da4765f49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: 4
+  targetScene: 5
 --- !u!1001 &1481924980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35557,12 +35557,12 @@ RectTransform:
   - {fileID: 224889586}
   - {fileID: 44536493}
   - {fileID: 1469380414}
-  m_Father: {fileID: 670714800}
+  m_Father: {fileID: 998334597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -450, y: -870}
-  m_SizeDelta: {x: 960, y: 1800}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1977021655
 MonoBehaviour:
@@ -35784,7 +35784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c33fe8a9c4498a4c995f0da4765f49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: 0
+  targetScene: 1
 --- !u!114 &1989375564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40563,6 +40563,10 @@ PrefabInstance:
       value: TT_demo_police
       objectReference: {fileID: 0}
     - target: {fileID: 8211519584719054784, guid: af4655084a2f6334e9534ee796fd2e59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366509754086954370, guid: af4655084a2f6334e9534ee796fd2e59, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

@@ -46,7 +46,7 @@ public static class GameDataManager
 	static CharactersShopData charactersShopData= new CharactersShopData ();
     static ItemsShopData ItemsShopData = new ItemsShopData();
 	//레벨
-	private static List<LevelData> levelDataList = new List<LevelData>();
+	//private static List<LevelData> levelDataList = new List<LevelData>();
 
     static Character selectedCharacter;
 	static SKillItem selectedSKillItem;
@@ -186,11 +186,12 @@ public static class GameDataManager
         SaveCharactersShoprData();
     }
 
-    //모든 구매한 아이템 인덱스 목록 반환
-    public static List<int> GetAllPurchasedItem()
-    {
-        return ItemsShopData.purchasedItemsIndexes;
-    }
+	//모든 구매한 아이템 인덱스 목록 반환
+
+	public static List<int> GetAllPurchasedItem()
+	{
+		return ItemsShopData.purchasedItemsIndexes;
+	}
 
     //특정 인덱스의 아이템 캐릭터 인덱스 반환
     public static int GetPurchasedItem(int index)

@@ -204,6 +204,8 @@ public class ItemShopUI : MonoBehaviour
             sk_uiItem.OnItemPurchase(index, OnItemSelected);
             //Add purchased item to Shop Data (구매한 아이템을데이터관리자에 추가)
             GameDataManager.AddPurchasedItem(index);
+
+            GenerateShopItemUI();
         }
         else //코인부족시 실행
         {

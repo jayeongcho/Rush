@@ -35,7 +35,7 @@ public class GenerateLevel : MonoBehaviour
         creatingSection = false;
 
         // 60초 뒤에 생성된 오브젝트 파괴
-        yield return new WaitForSeconds(60f);
+        yield return new WaitForSeconds(120f);
         Destroy(newSection);
     }
 

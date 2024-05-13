@@ -70,6 +70,8 @@ public class CharacterShopUI : MonoBehaviour
         AutoScrollShopList(GameDataManager.GetSelectedCharacterIndex());
 
     }
+
+   
     void AutoScrollShopList(int itemIndex)
     {
         scrollRect.verticalNormalizedPosition = Mathf.Clamp01(1f - (itemIndex / (float)(characterDB.CharactersCount - 1)));
@@ -85,19 +87,20 @@ public class CharacterShopUI : MonoBehaviour
         GameDataManager.SetSelectedCharacter(characterDB.GetCharacter(index), index);
     }
 
+   
     //상점ItemUI생성
-    private void GenerateShopItemUI()
+     void GenerateShopItemUI()
     {
 
         //중복되는 UI생성방지
-
+    
         //Loop thorow save purchased items and make them as purchased in th Database array
         //반복문을 통해 이미 구매된 아이템을 가져와 데이터베이스배열에서 해당 아이템을 구매된 상태로 표시
         for (int i = 0; i < GameDataManager.GetAllPurchasedCharacter().Count; i++)
         {
             //각 구매된 아이템의 인덱스를 변수에 저장 (데이터관리자에서 구매된 아이템을 가져올때 사용)
             int purchasedCharacterIndex = GameDataManager.GetPurchasedCharacter(i);
-
+            Debug.Log("purchasedCharacerIdex"+purchasedCharacterIndex);
             //데이터베이스 배열에서 해당 아이템을 구매된 상태로 표시
             characterDB.PurchaseCharacter(purchasedCharacterIndex);
         }
@@ -189,7 +192,7 @@ public class CharacterShopUI : MonoBehaviour
         SelectItemUI(index);
 
         // set selectedCharacter Image at the top of shop menu 맨위 캐릭터 선택
-        selectedCharacterIcon.sprite = characterDB.GetCharacter(index).image;
+       // selectedCharacterIcon.sprite = characterDB.GetCharacter(index).image;
 
         //SaveData
         GameDataManager.SetSelectedCharacter(characterDB.GetCharacter(index), index);
@@ -245,7 +248,9 @@ public class CharacterShopUI : MonoBehaviour
 
             //Add purchased item to Shop Data (구매한 아이템을데이터관리자에 추가)
             GameDataManager.AddPurchasedCharacter(index);
-            Debug.Log("addpurchasedCharacter");
+
+            GenerateShopItemUI();
+
 
         }
         else //코인부족시 실행
@@ -298,7 +303,7 @@ public class CharacterShopUI : MonoBehaviour
     {
         float scrollY = value.y;
         //Topfade
-        if (scrollY < .1f)
+        if (scrollY < .1f) 
             topScrollFade.SetActive(true);
         else
             topScrollFade.SetActive(false);

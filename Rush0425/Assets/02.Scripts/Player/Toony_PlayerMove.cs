@@ -202,14 +202,14 @@ public class Toony_PlayerMove : MonoBehaviour
             if (fingerDownPosition.x - fingerUpPosition.x > 0)
             {
                 // 플레이어를 x축으로 -2만큼 이동시킵니다.
-                transform.Translate(Vector3.left * 2.3f);
+                transform.Translate(Vector3.left * 2f);
                 // 왼쪽으로 스와이프한 경우
                 Debug.Log("왼쪽으로 스와이프");
 
             }
             else
             {
-                transform.Translate(Vector3.right * 2.3f);
+                transform.Translate(Vector3.right * 2f);
                 // 오른쪽으로 스와이프한 경우
                 Debug.Log("오른쪽으로 스와이프");
             }

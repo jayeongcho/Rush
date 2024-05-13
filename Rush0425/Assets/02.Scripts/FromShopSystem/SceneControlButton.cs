@@ -4,9 +4,12 @@ using UnityEngine.UI;
 
 public class SceneControlButton : MonoBehaviour
 {
+    LevelDistance levelDistance;
+
     enum TargetScene
     {
         Next,
+        LevelNext,
         Previous,
         Present,
         MainMenu,
@@ -18,6 +21,7 @@ public class SceneControlButton : MonoBehaviour
 
     void Start()
     {
+        levelDistance = FindObjectOfType<LevelDistance>();
         button = GetComponent<Button>();
 
         button.onClick.RemoveAllListeners();
@@ -28,8 +32,17 @@ public class SceneControlButton : MonoBehaviour
                 break;
 
             case TargetScene.Next:
+
                 button.onClick.AddListener(() => SceneController.LoadNextScene());
                 break;
+
+            case TargetScene.LevelNext:
+                if (levelDistance != null && levelDistance.disRun > 100)
+                {
+                    button.onClick.AddListener(() => SceneController.LoadNextScene());
+                }
+                break;
+
             case TargetScene.Present:
                 button.onClick.AddListener(() => SceneManager.LoadScene(SceneManager.GetActiveScene().name));
                 break;
