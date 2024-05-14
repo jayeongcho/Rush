@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class SceneControlButton : MonoBehaviour
 {
     LevelDistance levelDistance;
+    
 
     enum TargetScene
     {
@@ -13,7 +14,8 @@ public class SceneControlButton : MonoBehaviour
         Previous,
         Present,
         MainMenu,
-        Quit
+        Quit,
+        Credit
     }
 
     [SerializeField] TargetScene targetScene;
@@ -54,6 +56,12 @@ public class SceneControlButton : MonoBehaviour
             case TargetScene.Quit:
                 button.onClick.AddListener(() => Application.Quit());
                 break;
+
+            case TargetScene.Credit:               
+                button.onClick.AddListener(() => SceneManager.LoadScene("Credit"));
+                break;
+
+
         }
 
 

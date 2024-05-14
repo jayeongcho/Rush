@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 0ffd6877c7736dd44b567ece0a6b738e, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: fbd76715f93df4d4ca770cafe70c3944, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -922,7 +922,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &49616966
 Transform:
@@ -1169,7 +1169,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &88076237
 Transform:
@@ -1276,7 +1276,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &98353063
 Transform:
@@ -1321,7 +1321,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1581,7 +1581,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &116543525
 Transform:
@@ -1684,7 +1684,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &118384829
 Transform:
@@ -2243,6 +2243,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 447179858}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -2287,10 +2291,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2309,6 +2321,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 347562845}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -2353,10 +2369,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2375,6 +2399,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 447179858}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -2419,10 +2447,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2644,7 +2680,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &172479031
 Transform:
@@ -2731,6 +2767,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1414600635}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -2775,10 +2815,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3020,6 +3068,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989298098}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3064,10 +3116,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3364,6 +3424,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1972622712}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -3408,10 +3472,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3771,6 +3843,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 347562845}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3815,10 +3891,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3903,6 +3987,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1414600635}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3947,10 +4035,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4035,6 +4131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1208434978}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -4079,10 +4179,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4590,6 +4698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground_01
       objectReference: {fileID: 0}
+    - target: {fileID: 116158, guid: 9b68d0bab0322e44792a25b4305c663b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 431936, guid: 9b68d0bab0322e44792a25b4305c663b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -203.9
@@ -4643,6 +4755,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88076237}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -4687,10 +4803,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4780,6 +4904,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49616966}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -4824,10 +4952,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4846,6 +4982,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1744590892}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4890,10 +5030,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4912,6 +5060,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1208434978}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4956,10 +5108,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5103,7 +5263,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &330518927
 Transform:
@@ -5188,7 +5348,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &333238595
 Transform:
@@ -10386,7 +10546,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &347562845
 Transform:
@@ -10505,6 +10665,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49616966}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -10549,10 +10713,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10903,6 +11075,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1744590892}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10947,10 +11123,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11045,7 +11229,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16662,7 +16846,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &420863436
 Transform:
@@ -17268,6 +17452,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49616966}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17312,10 +17500,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17408,7 +17604,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &435616894
 Transform:
@@ -17530,7 +17726,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17568,6 +17764,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1208434978}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -17612,10 +17812,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17718,7 +17926,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17837,7 +18045,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &447179858
 Transform:
@@ -17867,6 +18075,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1744590892}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -17911,10 +18123,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18213,7 +18433,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &454894600
 Transform:
@@ -18386,7 +18606,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &467625121
 Transform:
@@ -18536,7 +18756,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &469019618
 Transform:
@@ -18556,7 +18776,6 @@ Transform:
   - {fileID: 629602820}
   - {fileID: 534868824}
   - {fileID: 686914122}
-  - {fileID: 1772259711}
   - {fileID: 1991056694}
   - {fileID: 799191040}
   - {fileID: 1340549712}
@@ -18818,7 +19037,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &486526044
 Transform:
@@ -19035,7 +19254,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &489618308
 Transform:
@@ -19305,6 +19524,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88076237}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -19349,10 +19572,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24427,6 +24658,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1414600635}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -24471,10 +24706,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24584,6 +24827,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1208434978}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -24628,10 +24875,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24826,7 +25081,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &534868824
 Transform:
@@ -24863,7 +25118,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25267,9 +25522,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3606763179840593723, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6636559659340651403, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
       propertyPath: m_Name
       value: Fence_Obs (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6636559659340651403, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25334,7 +25597,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30403,6 +30666,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88076237}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -30447,10 +30714,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35540,6 +35815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: road_snowy_01
       objectReference: {fileID: 0}
+    - target: {fileID: 145954, guid: 771aecee60bc94f4ea8dbb062320c3d8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 473558, guid: 771aecee60bc94f4ea8dbb062320c3d8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -142
@@ -36464,7 +36743,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &629602820
 Transform:
@@ -36501,7 +36780,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -36889,6 +37168,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1208434978}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -36933,10 +37216,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37045,6 +37336,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1972622712}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -37089,10 +37384,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37750,6 +38053,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 447179858}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -37794,10 +38101,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38285,21 +38600,49 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310820853395339594, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372799751207515903, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512515179270109555, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1539661887787826072, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539661887787826072, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2770557545376644997, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2770557545376644997, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4055717797118065515, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4055717797118065515, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5399770052953981529, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
       propertyPath: m_Name
       value: Item (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399770052953981529, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6242366722291641024, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38349,6 +38692,10 @@ PrefabInstance:
       propertyPath: itemTime
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8940251593442588167, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -38367,6 +38714,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49616966}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -38411,10 +38762,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39332,6 +39691,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 347562845}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -39376,10 +39739,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -39636,7 +40007,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &748450815
 Transform:
@@ -39673,7 +40044,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40124,7 +40495,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &781448978
 Transform:
@@ -40240,6 +40611,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1208434978}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -40284,10 +40659,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40314,7 +40697,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &790604962
 Transform:
@@ -40406,7 +40789,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &799191040
 Transform:
@@ -40729,7 +41112,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &816452086
 Transform:
@@ -41435,7 +41818,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &882100580
 Transform:
@@ -42492,6 +42875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2_obs (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2231355368221319953, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2358738784951110719, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
       propertyPath: mainCam
       value: 
@@ -42508,6 +42895,10 @@ PrefabInstance:
       propertyPath: levelControl
       value: 
       objectReference: {fileID: 1149539992}
+    - target: {fileID: 7368167310820858930, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7963960334313705306, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -42808,6 +43199,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1414600635}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -42852,10 +43247,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43062,7 +43465,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &966527312
 Transform:
@@ -43214,6 +43617,10 @@ PrefabInstance:
     - target: {fileID: 185530, guid: adf34b037141b6346b5afdebc3ebe2b2, type: 3}
       propertyPath: m_Name
       value: falling_snow
+      objectReference: {fileID: 0}
+    - target: {fileID: 185530, guid: adf34b037141b6346b5afdebc3ebe2b2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 485918, guid: adf34b037141b6346b5afdebc3ebe2b2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -48245,6 +48652,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1414600635}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -48289,10 +48700,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48424,7 +48843,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &985967253
 Transform:
@@ -48609,6 +49028,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 347562845}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48653,10 +49076,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48786,7 +49217,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48832,7 +49263,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1004281652
 Transform:
@@ -48869,7 +49300,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49174,7 +49605,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1038600088
 Transform:
@@ -49380,6 +49811,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88076237}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -49424,10 +49859,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49530,6 +49973,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88076237}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -49574,10 +50021,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -49871,7 +50326,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1080270528
 Transform:
@@ -50030,7 +50485,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -50076,7 +50531,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1092725144
 Transform:
@@ -50393,7 +50848,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1109968155
 Transform:
@@ -50631,7 +51086,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1111510575
 Transform:
@@ -50668,7 +51123,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -51077,7 +51532,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -51115,6 +51570,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1744590892}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -51159,10 +51618,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51358,6 +51825,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989298098}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -51402,10 +51873,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51528,6 +52007,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1744590892}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -51572,10 +52055,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52218,6 +52709,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 347562845}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -52262,10 +52757,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52554,7 +53057,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -30, y: -30}
+  m_AnchoredPosition: {x: -60, y: -60}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1164990355
@@ -52855,7 +53358,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -53025,6 +53528,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88076237}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -53069,10 +53576,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -53100,7 +53615,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1187551312
 Transform:
@@ -53196,6 +53711,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49616966}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -53240,10 +53759,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -58296,7 +58823,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1208434978
 Transform:
@@ -58956,6 +59483,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 347562845}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -59000,10 +59531,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59031,21 +59570,49 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1310820853395339594, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372799751207515903, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1512515179270109555, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1539661887787826072, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1539661887787826072, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 2770557545376644997, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2770557545376644997, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4055717797118065515, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4055717797118065515, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5399770052953981529, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
       propertyPath: m_Name
       value: Item (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5399770052953981529, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6242366722291641024, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59099,6 +59666,10 @@ PrefabInstance:
       propertyPath: sk_itemPrefabs.Array.data[2]
       value: 
       objectReference: {fileID: 2006217196}
+    - target: {fileID: 8940251593442588167, guid: 234a307b042fbeb4ea1580c2df0a4688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59162,7 +59733,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -59343,88 +59914,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251973807}
   m_Mesh: {fileID: 4300000, guid: 5ac02dd5ec694f449879b22c9d392202, type: 3}
---- !u!1001 &1260688910
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1366349495}
-    m_Modifications:
-    - target: {fileID: 4099684046225260221, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: mainCam
-      value: 
-      objectReference: {fileID: 963194225}
-    - target: {fileID: 4099684046225260221, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: crashThud
-      value: 
-      objectReference: {fileID: 1151262051}
-    - target: {fileID: 4099684046225260221, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: thePlayer
-      value: 
-      objectReference: {fileID: 544388680}
-    - target: {fileID: 4099684046225260221, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: levelControl
-      value: 
-      objectReference: {fileID: 1149539992}
-    - target: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 42.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7531304637295979003, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_Name
-      value: Bus_Obs
-      objectReference: {fileID: 0}
-    - target: {fileID: 7531304637295979003, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
---- !u!4 &1260688911 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4917538310187963908, guid: f73ca88e8a175b04c92b138ea9617198, type: 3}
-  m_PrefabInstance: {fileID: 1260688910}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1260730838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59433,6 +59922,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989298098}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -59477,10 +59970,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59904,7 +60405,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1277113790
 Transform:
@@ -60027,7 +60528,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -60476,7 +60977,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -60601,7 +61102,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1323561838
 Transform:
@@ -60772,7 +61273,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1340549712
 Transform:
@@ -60990,7 +61491,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1363099518
 Transform:
@@ -61300,7 +61801,6 @@ Transform:
   - {fileID: 98353063}
   - {fileID: 1744590892}
   - {fileID: 49616966}
-  - {fileID: 1260688911}
   - {fileID: 1237513540}
   - {fileID: 7773928509608151403}
   - {fileID: 7209244598127398107}
@@ -61888,7 +62388,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1386684427
 Transform:
@@ -62370,6 +62870,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88076237}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -62414,10 +62918,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62527,7 +63039,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1414600635
 Transform:
@@ -62685,9 +63197,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3606763179840593723, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6636559659340651403, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
       propertyPath: m_Name
       value: Fence_Obs
+      objectReference: {fileID: 0}
+    - target: {fileID: 6636559659340651403, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -62872,6 +63392,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1972622712}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -62916,10 +63440,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63047,6 +63579,10 @@ PrefabInstance:
     - target: {fileID: 128432, guid: 6c79e13c739a75b49b2ebfbf280c68e7, type: 3}
       propertyPath: m_Name
       value: ground_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 128432, guid: 6c79e13c739a75b49b2ebfbf280c68e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 451990, guid: 6c79e13c739a75b49b2ebfbf280c68e7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63656,7 +64192,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1452441142
 Transform:
@@ -64018,7 +64554,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1463399887
 Transform:
@@ -64284,7 +64820,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1469620786
 Transform:
@@ -64625,6 +65161,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989298098}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -64669,10 +65209,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -64967,6 +65515,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1972622712}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -65011,10 +65563,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65258,7 +65818,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1516055788
 Transform:
@@ -65406,6 +65966,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 447179858}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -65450,10 +66014,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65711,6 +66283,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1414600635}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -65755,10 +66331,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65937,7 +66521,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1556232264
 Transform:
@@ -66022,7 +66606,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1557976025
 Transform:
@@ -66179,6 +66763,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2_obs
       objectReference: {fileID: 0}
+    - target: {fileID: 2231355368221319953, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2358738784951110719, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
       propertyPath: mainCam
       value: 
@@ -66195,6 +66783,10 @@ PrefabInstance:
       propertyPath: levelControl
       value: 
       objectReference: {fileID: 1149539992}
+    - target: {fileID: 7368167310820858930, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7963960334313705306, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2
@@ -66604,7 +67196,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1573811858
 Transform:
@@ -71643,6 +72235,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 347562845}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -71687,10 +72283,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -71982,6 +72586,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989298098}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -72026,10 +72634,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -72119,6 +72735,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49616966}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -72163,10 +72783,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81985,7 +82613,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1621451061
 Transform:
@@ -82062,6 +82690,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1208434978}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -82106,10 +82738,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -87443,6 +88083,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49616966}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -87487,10 +88131,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -87901,9 +88553,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3606763179840593723, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 6636559659340651403, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
       propertyPath: m_Name
       value: Fence_Obs (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6636559659340651403, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -88017,7 +88677,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1678898782
 Transform:
@@ -88304,6 +88964,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989298098}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -88348,10 +89012,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -88853,6 +89525,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88076237}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -88897,10 +89573,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -89359,6 +90043,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1972622712}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -89403,10 +90091,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -89433,7 +90129,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1737811610
 Transform:
@@ -94573,7 +95269,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1744590892
 Transform:
@@ -94718,7 +95414,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1746962316
 Transform:
@@ -95049,7 +95745,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1771120006
 Transform:
@@ -95125,90 +95821,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771120005}
   m_Mesh: {fileID: 4300000, guid: fa47e779f2065a14caf8d28385e3edef, type: 3}
---- !u!1 &1772259710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1772259711}
-  - component: {fileID: 1772259713}
-  - component: {fileID: 1772259712}
-  m_Layer: 0
-  m_Name: road_snowy_01 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
-  m_IsActive: 0
---- !u!4 &1772259711
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772259710}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.5, y: 0.1, z: 11.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 469019618}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!23 &1772259712
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772259710}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
-  - {fileID: 2100000, guid: 939ce3925e70ae54ab76b26c5a781403, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1772259713
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772259710}
-  m_Mesh: {fileID: 4300000, guid: c0d88e7c2988f2f4b872f230118655f1, type: 3}
 --- !u!1001 &1775434285
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95217,6 +95829,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 447179858}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -95261,10 +95877,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -95502,7 +96126,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1787799712
 Transform:
@@ -95668,6 +96292,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 347562845}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -95712,10 +96340,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -95742,7 +96378,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1796253198
 Transform:
@@ -101323,7 +101959,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1830108457
 Transform:
@@ -106439,7 +107075,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1846325130
 Transform:
@@ -106910,6 +107546,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1972622712}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -106954,10 +107594,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -106980,6 +107628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2_obs (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2231355368221319953, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2358738784951110719, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
       propertyPath: mainCam
       value: 
@@ -106996,6 +107648,10 @@ PrefabInstance:
       propertyPath: levelControl
       value: 
       objectReference: {fileID: 1149539992}
+    - target: {fileID: 7368167310820858930, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7963960334313705306, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -107062,6 +107718,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1744590892}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -107106,10 +107766,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -112678,7 +113346,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1926830484
 Transform:
@@ -113014,7 +113682,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1940188324
 Transform:
@@ -118513,6 +119181,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1972622712}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -118557,10 +119229,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -118579,6 +119259,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1744590892}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -118623,10 +119307,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -118803,7 +119495,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1972622712
 Transform:
@@ -119215,7 +119907,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1989298098
 Transform:
@@ -119256,7 +119948,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1991056694
 Transform:
@@ -119475,7 +120167,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 439c6418833f0ac43878cf5ebb1a652f, type: 2}
+  - {fileID: 2100000, guid: efa33517c323be146995634b980bec0a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -119687,7 +120379,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2008003728
 Transform:
@@ -120093,7 +120785,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2017170455
 Transform:
@@ -120495,7 +121187,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2032885708
 Transform:
@@ -121009,6 +121701,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49616966}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -121053,10 +121749,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -121304,6 +122008,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1414600635}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -121348,10 +122056,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -121497,6 +122213,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1972622712}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -121541,10 +122261,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -121629,6 +122357,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1744590892}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -121673,10 +122405,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -121695,6 +122435,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1208434978}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -121739,10 +122483,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -121895,6 +122647,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989298098}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -121939,10 +122695,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -122342,6 +123106,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1989298098}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -122386,10 +123154,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -122651,6 +123427,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1414600635}
     m_Modifications:
+    - target: {fileID: 125538804143598178, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5537253080197350333, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2
@@ -122695,10 +123475,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoldCoin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5759627286715932339, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5960328076100289019, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
       propertyPath: coinFX
       value: 
       objectReference: {fileID: 1124779160}
+    - target: {fileID: 6187981765726416226, guid: 05b7465bcdf9c4c48985bd2a8a00c77e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -122966,7 +123754,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!33 &141513687887664106
 MeshFilter:
@@ -123034,6 +123822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock2_obs
       objectReference: {fileID: 0}
+    - target: {fileID: 2231355368221319953, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2358738784951110719, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
       propertyPath: mainCam
       value: 
@@ -123050,6 +123842,10 @@ PrefabInstance:
       propertyPath: levelControl
       value: 
       objectReference: {fileID: 1149539992}
+    - target: {fileID: 7368167310820858930, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7963960334313705306, guid: 05cdfdd9113d54a4fb94ad05f22d055e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -123168,6 +123964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Obs
       objectReference: {fileID: 0}
+    - target: {fileID: 6636559659340651403, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3606763179840593723, guid: a2e48ce8b78466b4e8bae447caddb3dd, type: 3}
@@ -123190,7 +123990,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2943439985917572924
 Transform:
@@ -123518,7 +124318,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!23 &7209244598129629361
 MeshRenderer:
@@ -123670,7 +124470,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!1001 &8213512445398063261
 PrefabInstance:
@@ -123680,6 +124480,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1366349495}
     m_Modifications:
+    - target: {fileID: 1869702152126729700, guid: e6ff644dc8a0ae54e9d5906b3cad23b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2355759413796319534, guid: e6ff644dc8a0ae54e9d5906b3cad23b6, type: 3}
       propertyPath: mainCam
       value: 
@@ -123743,6 +124547,10 @@ PrefabInstance:
     - target: {fileID: 7704007702850039388, guid: e6ff644dc8a0ae54e9d5906b3cad23b6, type: 3}
       propertyPath: m_Name
       value: Christmas_Tree_Obs
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704007702850039388, guid: e6ff644dc8a0ae54e9d5906b3cad23b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -123843,7 +124651,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 69
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
