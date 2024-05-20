@@ -208,7 +208,7 @@ public static class GameDataManager
 	//부활추가
 	public static bool GetisRespawn()
 	{
-		return selectedSKillItem.respawn;
+		return selectedSKillItem.isrespawn;
 
     }
 

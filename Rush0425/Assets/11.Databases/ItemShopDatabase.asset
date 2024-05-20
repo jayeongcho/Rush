@@ -19,17 +19,17 @@ MonoBehaviour:
     doblecoin: 0
     speed: 1
     price: 0
-    respawn: 0
+    isrespawn: 0
     isPurchased: 1
     itemObject: {fileID: 0}
   - image: {fileID: 21300000, guid: 9638f9ba822177d4f8ed8f2cdf6c7731, type: 3}
     name: Double Coin
     info: "\uB450\uBC30"
-    doblecoin: 0
+    doblecoin: 20
     speed: 1
     price: 100
-    respawn: 0
-    isPurchased: 0
+    isrespawn: 0
+    isPurchased: 1
     itemObject: {fileID: 0}
   - image: {fileID: 21300000, guid: b88771d610c6ff84aa34c7375291027a, type: 3}
     name: Speed
@@ -37,8 +37,8 @@ MonoBehaviour:
     doblecoin: 0
     speed: 30
     price: 100
-    respawn: 0
-    isPurchased: 0
+    isrespawn: 0
+    isPurchased: 1
     itemObject: {fileID: 0}
   - image: {fileID: 21300000, guid: a9c95909c8fe0824cbd5d1264251c273, type: 3}
     name: Respawn
@@ -46,6 +46,6 @@ MonoBehaviour:
     doblecoin: 0
     speed: 1
     price: 100
-    respawn: 1
+    isrespawn: 0
     isPurchased: 0
     itemObject: {fileID: 0}

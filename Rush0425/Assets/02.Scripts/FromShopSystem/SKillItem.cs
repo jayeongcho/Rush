@@ -14,7 +14,7 @@ using UnityEngine;
     public int price;
 
 
-    public bool respawn;//부활
+    public bool isrespawn;//부활
     public bool isPurchased;//구매 여부 확인
 
     public GameObject itemObject;
