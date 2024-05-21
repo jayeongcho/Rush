@@ -112,7 +112,7 @@ public class ItemShopUI : MonoBehaviour
             uiItem.SetSkillName(skillitem.name);
             uiItem.SetSkillInfo(skillitem.info);
             uiItem.SetSkillImage(skillitem.image);
-            uiItem.SetSkillSpeed(skillitem.speed);
+            //uiItem.SetSkillSpeed(skillitem.speed);
 
             // uiItem.SetSkillPower(skillitem.power);
             uiItem.SetSkillPrice(skillitem.price);

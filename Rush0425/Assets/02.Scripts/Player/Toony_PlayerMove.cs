@@ -269,6 +269,6 @@ public class Toony_PlayerMove : MonoBehaviour
         mainCam.GetComponent<Animator>().enabled = true;
 
         levelControl.GetComponent<EndRunSequence>().enabled = true;
-        Debug.Log("crused");
+        
     }
 }

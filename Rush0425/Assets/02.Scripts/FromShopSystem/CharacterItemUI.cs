@@ -12,7 +12,7 @@ public class CharacterItemUI : MonoBehaviour
     [SerializeField] Image characterImage; 
     [SerializeField] TMP_Text characterNameText;
     [SerializeField] Image characterSpeedFill;
-    [SerializeField] Image characterPowerFill;
+    //[SerializeField] Image characterPowerFill;
     [SerializeField] TMP_Text characterPriceText;
     [SerializeField] Button characterPurchaseButton;
 
@@ -48,10 +48,10 @@ public class CharacterItemUI : MonoBehaviour
     }
 
     //캐릭터 파워 설정
-    public void SetCharacterPower(float power)
-    {
-        characterPowerFill.fillAmount = power / 100;
-    }
+    //public void SetCharacterPower(float power)
+    //{
+    //    characterPowerFill.fillAmount = power / 100;
+    //}
 
     //캐릭터 가격 설정
     public void SetCharacterPrice(int price)

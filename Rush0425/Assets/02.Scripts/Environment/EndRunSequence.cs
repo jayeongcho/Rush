@@ -8,7 +8,7 @@ public class EndRunSequence : MonoBehaviour
 {
     //현재상태 코인&거리
     public GameObject liveCoins;
-    public GameObject liveDis;
+   // public GameObject liveDis;
 
     
     public GameObject endScreen;
@@ -32,7 +32,7 @@ public class EndRunSequence : MonoBehaviour
         //화면에 표시중인 코인,거리 끄기
                     
         liveCoins.SetActive(false);
-        liveDis.SetActive(false);
+       // liveDis.SetActive(false);
         endScreen.SetActive(true);
 
         //fadeout실행

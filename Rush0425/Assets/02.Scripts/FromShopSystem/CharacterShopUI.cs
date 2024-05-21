@@ -126,7 +126,7 @@ public class CharacterShopUI : MonoBehaviour
             uiItem.SetCharacterName(character.name);
             uiItem.SetCharacterImage(character.image);
             uiItem.SetCharacterSpeed(character.speed);
-            uiItem.SetCharacterPower(character.power);
+           // uiItem.SetCharacterPower(character.power);
             uiItem.SetCharacterPrice(character.price);
 
 

@@ -46,6 +46,6 @@ MonoBehaviour:
     doblecoin: 0
     speed: 1
     price: 100
-    isrespawn: 0
-    isPurchased: 0
+    isrespawn: 1
+    isPurchased: 1
     itemObject: {fileID: 0}
