@@ -171,10 +171,7 @@ public class ItemShopUI : MonoBehaviour
     {
         return ShopItemsContainer.GetChild(itemIndex).GetComponent<SkillItemUI>();
     }
-    CharacterItemUI GetItemUI(int itemIndex)
-    {
-        return ShopItemsContainer.GetChild(itemIndex).GetComponent<CharacterItemUI>();
-    }
+    
     void OnItemPurchased(int index)
     {
         SKillItem skillitem = skillitemDB.GetItem(index);
@@ -182,8 +179,6 @@ public class ItemShopUI : MonoBehaviour
 
         //캐릭터정보 데이터베이스에서 가져오기 (코인필요)
         Character character = characterDB.GetCharacter(index);
-
-
 
         //코인 있을때
         if (GameDataManager.CanSpendCoins(character.price))

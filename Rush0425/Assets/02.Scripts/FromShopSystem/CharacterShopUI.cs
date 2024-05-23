@@ -11,23 +11,23 @@ public class CharacterShopUI : MonoBehaviour
 
     [Header("UI elemetns")]
     [SerializeField] Image selectedCharacterIcon; //상점메뉴상단 캐릭터아이콘
-    [SerializeField] Transform ShopMenu;
-    [SerializeField] Transform ShopItemsContainer;
-    [SerializeField] GameObject itemPrefab;
+    [SerializeField] Transform ShopMenu;//상점메뉴
+    [SerializeField] Transform ShopItemsContainer;// 상점 아이템을 담는 컨테이너
+    [SerializeField] GameObject itemPrefab;// 아이템 프리팹
     [Space(20)]
-    [SerializeField] CharacterShopDatabase characterDB;
+    [SerializeField] CharacterShopDatabase characterDB; //캐릭터 데이터베이스
 
     [Space(20)]
     [Header("ShopEvents")]
-    [SerializeField] GameObject shopUI;
-    [SerializeField] Button openShopButton;
-    [SerializeField] Button closeShopButton;
-    [SerializeField] Button scrollUpButton;
+    [SerializeField] GameObject shopUI;//상점UI
+    [SerializeField] Button openShopButton;//상점 열기 버튼
+    [SerializeField] Button closeShopButton;//상점 닫기 버튼
+    [SerializeField] Button scrollUpButton;// 스크롤 위로 버튼
 
 
     //  [Space(20)]
     [Header("Main Menu")]
-    [SerializeField] GameObject[] characterPrefabs;
+    [SerializeField] GameObject[] characterPrefabs; //캐릭터 프리팹 배열
     // [SerializeField] Image mainMenuCharacterImage;
     //  [SerializeField] TMP_Text mainMenuCharacterName;
 
@@ -57,21 +57,26 @@ public class CharacterShopUI : MonoBehaviour
         AddShopEvents();
         GenerateShopItemUI();
 
+        //플레이어 데이터 관리자에서 선택된 캐릭터 설정
         //Set Selected character in the playerDataManager
         SetSelectedCharacter();
 
+        //선택된 ui아이템 선택
         //Select UI item
         SelectItemUI(GameDataManager.GetSelectedCharacterIndex());
 
+        //플레이어 스킨 변경
         //set player skin
         ChangePlayerSkin();
 
+        //상점에서 선택된 캐릭터로 자동 스크롤
         //Auto scroll to selected character in the shop
         AutoScrollShopList(GameDataManager.GetSelectedCharacterIndex());
 
     }
 
    
+    //상점 리스트 자동 스크롤
     void AutoScrollShopList(int itemIndex)
     {
         scrollRect.verticalNormalizedPosition = Mathf.Clamp01(1f - (itemIndex / (float)(characterDB.CharactersCount - 1)));
@@ -165,7 +170,7 @@ public class CharacterShopUI : MonoBehaviour
     //}
 
 
-    
+    //캐릭터 변경
     void ChangePlayerSkin()
     {
         //메인캐릭터 변경
@@ -186,6 +191,7 @@ public class CharacterShopUI : MonoBehaviour
         selectedCharacterIcon.sprite = GameDataManager.GetSelectedCharacter().image;
     }
 
+    //아이템 선택 이벤트 처리
     void OnItemSelected(int index)
     {
         //Selected item inthe UI UI에서 선택된 아이템
@@ -214,12 +220,14 @@ public class CharacterShopUI : MonoBehaviour
         newUiItem.SelectItem();// 새로 선택된 아이템ui를 선태 처리
 
     }
+
+    //아이템ui가져오기
     CharacterItemUI GetItemUI(int itemIndex)
     {
         return ShopItemsContainer.GetChild(itemIndex).GetComponent<CharacterItemUI>();
     }
 
-    //  아이템구매
+    //  아이템 구매
     void OnItemPurchased(int index)
     {
         //아이템 정보 데이터베이스에서 가져오기
@@ -278,6 +286,8 @@ public class CharacterShopUI : MonoBehaviour
         });
 
     }
+
+    //상점 이벤트 추가
     void AddShopEvents()
     {
         openShopButton.onClick.RemoveAllListeners();
@@ -293,12 +303,14 @@ public class CharacterShopUI : MonoBehaviour
         scrollUpButton.onClick.AddListener(OnScrollUpClicked);
     }
 
+    //스크롤 위로 버튼 클릭시
     void OnScrollUpClicked()
     {
         //Ease.OutBack :약간뒤로 이동하여 마무리되는 효과, 스크롤을 더 부드럽게 만들어주는데 사용됨
         scrollRect.DOVerticalNormalizedPos(1f, .5f).SetEase(Ease.OutBack);
     }
 
+    // 상점 리스트 스크롤 시
     void OnShopListScroll(Vector2 value)
     {
         float scrollY = value.y;

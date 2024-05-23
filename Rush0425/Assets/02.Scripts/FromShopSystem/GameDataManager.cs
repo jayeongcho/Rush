@@ -15,15 +15,7 @@ using UnityEngine;
     public List<int> purchasedItemsIndexes = new List<int>();
 }
 
-//추가: 레벨
-[System.Serializable]
-public class LevelData
-{
-    public int levelIndex; // 레벨 인덱스
-    public bool unlocked; // 레벨이 잠금 해제되었는지 여부
-    public int starsCollected; // 획득한 별의 수
-    // 필요한 다른 정보들 추가 가능
-}
+
 
 //Player Data Holder 플레이어 데이터를 보유하는 클래스
 [System.Serializable] public class PlayerData
@@ -33,6 +25,8 @@ public class LevelData
    
     //선택한 캐릭터 인덱스
     public int selectedCharacterIndex = 0;
+
+	//선택한 아이템 인덱스
 	public int selectedItemIndex = 0;
  
 }
@@ -45,9 +39,8 @@ public static class GameDataManager
     static PlayerData playerData = new PlayerData ();
 	static CharactersShopData charactersShopData= new CharactersShopData ();
     static ItemsShopData ItemsShopData = new ItemsShopData();
-	//레벨
-	//private static List<LevelData> levelDataList = new List<LevelData>();
-
+	
+	//선택된 캐릭터와 아이템을 저장하는 변수
     static Character selectedCharacter;
 	static SKillItem selectedSKillItem;
 	
@@ -74,7 +67,7 @@ public static class GameDataManager
         return selectedSKillItem;
     }
 
-    //선택된 캐릭터의 객체, 해당 캐릭터의 인덱스를 저장
+    // 선택된 캐릭터 설정 및 해당 캐릭터의 인덱스를 저장
     public static void SetSelectedCharacter(Character character, int index)
 	{
 		selectedCharacter = character;
@@ -83,8 +76,8 @@ public static class GameDataManager
 
         SavePlayerData();
 	}
-	
-	//아이템
+
+    // 선택된 아이템 설정 및 해당 아이템의 인덱스를 저장
     public static void SetSelectedItem(SKillItem sk_item, int index)
     {
         selectedSKillItem = sk_item;
@@ -101,6 +94,7 @@ public static class GameDataManager
 		return playerData.selectedCharacterIndex;
 	}
 
+    // 선택한 아이템 인덱스 반환
     public static int GetSelectedItemIndex()
     {
         return playerData.selectedItemIndex;
@@ -121,10 +115,10 @@ public static class GameDataManager
 		SavePlayerData ();
 	}
 
-	
 
-	//쓸수 있는 코인
-	public static bool CanSpendCoins (int amount)
+
+    //쓸수 있는 코인, 코인을 사용할 수 있는지 확인
+    public static bool CanSpendCoins (int amount)
 	{
 		return (playerData.coins >= amount);
 	}
@@ -171,7 +165,7 @@ public static class GameDataManager
 		return charactersShopData.purchasedCharactersIndexes [index];
 	}
 
-    //스피드 추가
+    // 선택된 캐릭터의 속도 반환
     public static float GetcharacterSpeed()
     {
         return selectedCharacter.speed;
@@ -199,14 +193,14 @@ public static class GameDataManager
         return ItemsShopData.purchasedItemsIndexes[index];
     }
 
-	//스피드 추가
-	public static float GetItemSpeed()
+    // 선택된 아이템의 속도 반환
+    public static float GetItemSpeed()
 	{
 		return selectedSKillItem.speed;
 	}
 
-	//부활추가
-	public static bool GetisRespawn()
+    // 부활 가능 여부 반환
+    public static bool GetisRespawn()
 	{
 		return selectedSKillItem.isrespawn;
 

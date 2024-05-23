@@ -5,10 +5,10 @@ using UnityEngine.UI;
 using DG.Tweening;
 public class CharacterItemUI : MonoBehaviour
 {
-    [SerializeField] Color char_itemNotSelctedColor; //선택안된경우 색상
+    [SerializeField] Color char_itemNotSelctedColor; //선택안된경우  색상
     [SerializeField] Color char_itemSelectedColor; //선택된 경우 색상
 
-    [Space(20f)] //그냥 공간생성
+    [Space(20f)] 
     [SerializeField] Image characterImage; 
     [SerializeField] TMP_Text characterNameText;
     [SerializeField] Image characterSpeedFill;
@@ -23,13 +23,13 @@ public class CharacterItemUI : MonoBehaviour
 
     //-----------------------
 
-    //아이템 위치
+    //아이템 위치 설정
     public void SetItemPosition(Vector2 pos)
     {
         GetComponent<RectTransform>().anchoredPosition += pos;
     }
 
-    //캐릭터 이미지
+    //캐릭터 이미지 설정
     public void SetCharacterImage(Sprite sprite)
     {
         characterImage.sprite = sprite;
@@ -59,7 +59,7 @@ public class CharacterItemUI : MonoBehaviour
         characterPriceText.text = price.ToString();
     }
 
-    //이미구매한 캐릭터 표시
+    //이미구매한 캐릭터 표시 : 구매버튼 비활성화, 아이템 버튼 활성화, 색상 변경
     public void SetCharacterAsPurchased()
     {
         characterPurchaseButton.gameObject.SetActive(false);
@@ -72,7 +72,8 @@ public class CharacterItemUI : MonoBehaviour
 
 
     }
-    //아이템 구매시 실행될 이벤트 등록
+    //아이템 구매버튼 클릭시 실행될 이벤트 등록
+    //action : 버튼 클릭시 실행할 매서드
     //events : eventname( item_index, methodToExcute)
     public void OnItemPurchase(int itemIndex, UnityAction<int> action)
     {
@@ -80,8 +81,7 @@ public class CharacterItemUI : MonoBehaviour
         characterPurchaseButton.onClick.AddListener(() => action.Invoke(itemIndex));
     }
 
-    //아이템 선택시 실행될 이벤트 등록
-   
+    //아이템 클릭시 실행될 이벤트 등록   
     public void OnItemSelect(int itemIndex, UnityAction<int> action)
     {
         Debug.Log("onItemSelect");

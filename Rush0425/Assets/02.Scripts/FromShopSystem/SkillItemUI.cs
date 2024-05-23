@@ -35,17 +35,18 @@ public class SkillItemUI : MonoBehaviour
         GetComponent<RectTransform>().anchoredPosition += pos;
     }
 
-    //캐릭터 이미지
+    //아이템 이미지 설정
     public void SetSkillImage(Sprite sprite)
     {
         skillImage.sprite = sprite;
     }
 
-    //캐릭터 이름 설정
+    //아이템 이름 설정
     public void SetSkillName(string name)
     {
         skillNameText.text = name;
     }
+    //아이템 설명
     public void SetSkillInfo(string info)
     {
         skillInfoText.text = info;
@@ -58,7 +59,7 @@ public class SkillItemUI : MonoBehaviour
 
   
 
-    //캐릭터 가격 설정
+    //아이템 가격 설정
     public void SetSkillPrice(int price)
     {
         skillPriceText.text = price.ToString();
