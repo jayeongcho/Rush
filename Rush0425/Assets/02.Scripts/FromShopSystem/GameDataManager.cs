@@ -133,9 +133,13 @@ public static class GameDataManager
 	//플레이어 데이터 로드
 	static void LoadPlayerData ()
 	{
-		playerData = BinarySerializer.Load<PlayerData> ("player-data.txt");
-		UnityEngine.Debug.Log ("<color=green>[PlayerData] Loaded.</color>");
-	}
+        playerData = BinarySerializer.Load<PlayerData> ("player-data.txt");
+        UnityEngine.Debug.Log ("<color=green>[PlayerData] Loaded.</color>");
+        //string path = System.IO.Path.Combine(Application.persistentDataPath, "player-data.txt");
+        //Debug.Log("Loading player data from: " + path);
+        //playerData = BinarySerializer.Load<PlayerData>(path);
+        //UnityEngine.Debug.Log("<color=green>[PlayerData] Loaded.</color>");
+    }
 
 	//플레이어 데이터 저장
 	static void SavePlayerData ()
