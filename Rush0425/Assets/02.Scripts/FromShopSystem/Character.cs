@@ -9,7 +9,7 @@ public struct Character
     
     public string name;
     [Range(0, 100)] public float speed; //胶乔靛 加己
-    [Range(0, 100)] public float power;//塞 加己
+    
 
     public int price;
 

@@ -39,11 +39,11 @@ public class Toony_PlayerMove : MonoBehaviour
     private void Awake()
     {
         ChangePlayerSkin();
-       
+
     }
     void Start()
     {
-         // LevelDistance 스크립트의 인스턴스를 가져옴
+        // LevelDistance 스크립트의 인스턴스를 가져옴
         levelDistanceScript = FindObjectOfType<LevelDistance>();
     }
     void ChangePlayerSkin()
@@ -107,7 +107,7 @@ public class Toony_PlayerMove : MonoBehaviour
 
 
             }
-            
+
         }
         if (isJumping == true)
         {
@@ -124,7 +124,7 @@ public class Toony_PlayerMove : MonoBehaviour
 
         //모바일
         // 터치 입력의 개수를 확인합니다.
-        if (Input.touchCount > 0 && canMove==true )
+        if (Input.touchCount > 0 && canMove == true)
         {
             // 첫 번째 터치 입력을 가져옵니다.
             Touch touch = Input.GetTouch(0);
@@ -199,19 +199,17 @@ public class Toony_PlayerMove : MonoBehaviour
         // 좌우 스와이프 확인
         if (isSwiping && swipeDistanceX > swipeThreshold && swipeDistanceX > swipeDistanceY)
         {
+            // 왼쪽으로 스와이프한 경우
             if (fingerDownPosition.x - fingerUpPosition.x > 0)
             {
                 // 플레이어를 x축으로 -2만큼 이동시킵니다.
                 transform.Translate(Vector3.left * 2f);
-                // 왼쪽으로 스와이프한 경우
-                Debug.Log("왼쪽으로 스와이프");
 
             }
+            // 오른쪽으로 스와이프한 경우
             else
             {
                 transform.Translate(Vector3.right * 2f);
-                // 오른쪽으로 스와이프한 경우
-                Debug.Log("오른쪽으로 스와이프");
             }
         }
         // 상하 스와이프 확인
@@ -219,27 +217,16 @@ public class Toony_PlayerMove : MonoBehaviour
         {
             if (fingerDownPosition.y - fingerUpPosition.y > 0)
             {
-                //// 아래로 스와이프한 경우
-               
-                //if (isSlide == false)
-                //{
-                //    isSlide = true;
-                //    playerObject.GetComponent<Animator>().Play("Slide");
-                //    //점프코루틴
-                //    StartCoroutine(SlideSequence());
-                //}
-               
-                
+
+
             }
             else
             {
                 // 위로 스와이프한 경우 점프
-                Debug.Log("위로 스와이프");
-
                 isJumping = true;
                 playerObject.GetComponent<Animator>().Play("Jump");
                 StartCoroutine(JumpSequence());
-              
+
             }
         }
     }
@@ -247,7 +234,7 @@ public class Toony_PlayerMove : MonoBehaviour
     //게임종료(별 모았을때)
     public void ColletedAll()
     {
-               
+
         this.GetComponent<Toony_PlayerMove>().enabled = false;
         playerObject.GetComponent<Animator>().Play("Victory");
         levelControl.GetComponent<LevelDistance>().enabled = false;
@@ -261,7 +248,7 @@ public class Toony_PlayerMove : MonoBehaviour
     public void Crushed()
     {
 
-      
+
         this.GetComponent<Toony_PlayerMove>().enabled = false;
         playerObject.GetComponent<Animator>().Play("Stumble Backwards");
         levelControl.GetComponent<LevelDistance>().enabled = false;
@@ -269,6 +256,6 @@ public class Toony_PlayerMove : MonoBehaviour
         mainCam.GetComponent<Animator>().enabled = true;
 
         levelControl.GetComponent<EndRunSequence>().enabled = true;
-        
+
     }
 }

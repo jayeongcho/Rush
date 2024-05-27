@@ -75,7 +75,7 @@ public class CharacterShopUI : MonoBehaviour
 
     }
 
-   
+
     //상점 리스트 자동 스크롤
     void AutoScrollShopList(int itemIndex)
     {
@@ -92,20 +92,18 @@ public class CharacterShopUI : MonoBehaviour
         GameDataManager.SetSelectedCharacter(characterDB.GetCharacter(index), index);
     }
 
-   
-    //상점ItemUI생성
-     void GenerateShopItemUI()
-    {
 
+    //상점ItemUI생성
+    void GenerateShopItemUI()
+    {
         //중복되는 UI생성방지
-    
         //Loop thorow save purchased items and make them as purchased in th Database array
         //반복문을 통해 이미 구매된 아이템을 가져와 데이터베이스배열에서 해당 아이템을 구매된 상태로 표시
         for (int i = 0; i < GameDataManager.GetAllPurchasedCharacter().Count; i++)
         {
             //각 구매된 아이템의 인덱스를 변수에 저장 (데이터관리자에서 구매된 아이템을 가져올때 사용)
             int purchasedCharacterIndex = GameDataManager.GetPurchasedCharacter(i);
-            Debug.Log("purchasedCharacerIdex"+purchasedCharacterIndex);
+            Debug.Log("purchasedCharacerIdex" + purchasedCharacterIndex);
             //데이터베이스 배열에서 해당 아이템을 구매된 상태로 표시
             characterDB.PurchaseCharacter(purchasedCharacterIndex);
         }
@@ -131,7 +129,7 @@ public class CharacterShopUI : MonoBehaviour
             uiItem.SetCharacterName(character.name);
             uiItem.SetCharacterImage(character.image);
             uiItem.SetCharacterSpeed(character.speed);
-           // uiItem.SetCharacterPower(character.power);
+            // uiItem.SetCharacterPower(character.power);
             uiItem.SetCharacterPrice(character.price);
 
 
@@ -173,12 +171,10 @@ public class CharacterShopUI : MonoBehaviour
     //캐릭터 변경
     void ChangePlayerSkin()
     {
-        //메인캐릭터 변경
-
         Character character = GameDataManager.GetSelectedCharacter();
-        
+
         int selectedSkin = GameDataManager.GetSelectedCharacterIndex();
-        
+
         //게임오브젝트를 활성화시키고, 선택안된건 비활성화
         characterPrefabs[selectedSkin].SetActive(true);
         for (int i = 0; i < characterPrefabs.Length; i++)
@@ -198,7 +194,7 @@ public class CharacterShopUI : MonoBehaviour
         SelectItemUI(index);
 
         // set selectedCharacter Image at the top of shop menu 맨위 캐릭터 선택
-       // selectedCharacterIcon.sprite = characterDB.GetCharacter(index).image;
+        // selectedCharacterIcon.sprite = characterDB.GetCharacter(index).image;
 
         //SaveData
         GameDataManager.SetSelectedCharacter(characterDB.GetCharacter(index), index);
@@ -315,7 +311,7 @@ public class CharacterShopUI : MonoBehaviour
     {
         float scrollY = value.y;
         //Topfade
-        if (scrollY < .1f) 
+        if (scrollY < .1f)
             topScrollFade.SetActive(true);
         else
             topScrollFade.SetActive(false);
