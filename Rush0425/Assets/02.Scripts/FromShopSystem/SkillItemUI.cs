@@ -15,7 +15,7 @@ public class SkillItemUI : MonoBehaviour
     [SerializeField] Image skillImage;
     [SerializeField] TMP_Text skillNameText;
    // [SerializeField] TMP_Text skillInfoText;
-    [SerializeField] TMP_Text skillSpeedText;
+   // [SerializeField] TMP_Text skillSpeedText;
     [SerializeField] TMP_Text skillInfoText;
     // [SerializeField] Image skillSpeedFill;
     //[SerializeField] Image skillPowerFill;
@@ -52,10 +52,10 @@ public class SkillItemUI : MonoBehaviour
         skillInfoText.text = info;
     }
 
-    public void SetSkillSpeed(float speed)
-    {
-        skillSpeedText.text = speed.ToString();
-    }
+    //public void SetSkillSpeed(float speed)
+    //{
+    //    skillSpeedText.text = speed.ToString();
+    //}
 
   
 

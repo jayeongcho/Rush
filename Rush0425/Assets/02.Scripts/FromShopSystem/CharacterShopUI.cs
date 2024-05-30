@@ -230,7 +230,7 @@ public class CharacterShopUI : MonoBehaviour
         Character character = characterDB.GetCharacter(index);
         //ui요소 가져오기
         CharacterItemUI uiItem = GetItemUI(index);
-
+        
         //코인있을때
         if (GameDataManager.CanSpendCoins(character.price))
         {

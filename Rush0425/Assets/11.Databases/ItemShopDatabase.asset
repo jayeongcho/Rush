@@ -29,13 +29,13 @@ MonoBehaviour:
     speed: 1
     price: 2000
     isrespawn: 0
-    isPurchased: 1
+    isPurchased: 0
     itemObject: {fileID: 0}
   - image: {fileID: 21300000, guid: b88771d610c6ff84aa34c7375291027a, type: 3}
     name: Speed
     info: Get Speed UP and Pass obstacle
     doblecoin: 0
-    speed: 30
+    speed: 20
     price: 3000
     isrespawn: 0
     isPurchased: 0
@@ -47,5 +47,5 @@ MonoBehaviour:
     speed: 1
     price: 5000
     isrespawn: 1
-    isPurchased: 1
+    isPurchased: 0
     itemObject: {fileID: 0}

@@ -5617,7 +5617,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $100
+  m_text: $1000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10083,7 +10083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70958f1ee5a5be34e8efad9a5f923cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: 100
+  coin: 1000
 --- !u!114 &1683432900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17183,14 +17183,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1813825637}
     m_Modifications:
-    - target: {fileID: 5332954911103540025, guid: af918352b9911b7408e71214814469d6, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5332954911103540025, guid: af918352b9911b7408e71214814469d6, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 447740951, guid: 6d1a2570067e3ae4cb5c72a2bca3b8d5, type: 3}
     - target: {fileID: 5996629001307773067, guid: af918352b9911b7408e71214814469d6, type: 3}
       propertyPath: m_Name
       value: Shop_Item_item

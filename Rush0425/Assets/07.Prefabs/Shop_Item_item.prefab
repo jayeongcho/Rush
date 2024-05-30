@@ -678,7 +678,6 @@ MonoBehaviour:
   sk_itemSelectedColor: {r: 0.36078432, g: 0.32941177, b: 0.9333334, a: 1}
   skillImage: {fileID: 7650235984355160306}
   skillNameText: {fileID: 3120230066537952819}
-  skillSpeedText: {fileID: 0}
   skillInfoText: {fileID: 2092985407536251472}
   skillPriceText: {fileID: 634820539008450744}
   skillPurchaseButton: {fileID: 3796073171591699711}
@@ -797,7 +796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b88771d610c6ff84aa34c7375291027a, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

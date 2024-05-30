@@ -171,20 +171,26 @@ public class ItemShopUI : MonoBehaviour
     {
         return ShopItemsContainer.GetChild(itemIndex).GetComponent<SkillItemUI>();
     }
-    
+
+    CharacterItemUI GetItemUI(int itemIndex)
+    {
+        return ShopItemsContainer.GetChild(itemIndex).GetComponent<CharacterItemUI>();
+    }
+
     void OnItemPurchased(int index)
     {
         SKillItem skillitem = skillitemDB.GetItem(index);
         SkillItemUI sk_uiItem = SK_GetItemUI(index);
 
-        //캐릭터정보 데이터베이스에서 가져오기 (코인필요)
+        //캐릭터정보 데이터베이스에서 가져오기 (코인필요)      
         Character character = characterDB.GetCharacter(index);
 
+
         //코인 있을때
-        if (GameDataManager.CanSpendCoins(character.price))
+        if (GameDataManager.CanSpendCoins(skillitem.price))
         {
             //Proceed with purchase operation (코인소비)
-            GameDataManager.SpendCoins(character.price);
+            GameDataManager.SpendCoins(skillitem.price);
             //Play purchase Fx
             purchaseFx.Play();
             purchaseSound.Play();
@@ -210,6 +216,7 @@ public class ItemShopUI : MonoBehaviour
             //item shake
             sk_uiItem.AnimateShakeItem();
         }
+        
     }
 
     //코인부족시 나오는 효과
