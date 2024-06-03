@@ -410,7 +410,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b2f9aaa329481f4ba795678d782fd96, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 79d6985c9a2322b4b9fe0ea3bddd14d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -772,7 +772,6 @@ MonoBehaviour:
   characterImage: {fileID: 6105952945030349689}
   characterNameText: {fileID: 1685143354518800729}
   characterSpeedFill: {fileID: 7823856432509806557}
-  characterPowerFill: {fileID: 0}
   characterPriceText: {fileID: 3158262394753448744}
   characterPurchaseButton: {fileID: 5891136311715238406}
   itemButton: {fileID: 5457731470109283132}

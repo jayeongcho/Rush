@@ -27,7 +27,7 @@ MonoBehaviour:
     info: Get double coins
     doblecoin: 20
     speed: 1
-    price: 2000
+    price: 200
     isrespawn: 0
     isPurchased: 0
     itemObject: {fileID: 0}
@@ -36,7 +36,7 @@ MonoBehaviour:
     info: Get Speed UP and Pass obstacle
     doblecoin: 0
     speed: 20
-    price: 3000
+    price: 300
     isrespawn: 0
     isPurchased: 0
     itemObject: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
     info: Get Respawn 1 time
     doblecoin: 0
     speed: 1
-    price: 5000
+    price: 500
     isrespawn: 1
     isPurchased: 0
     itemObject: {fileID: 0}

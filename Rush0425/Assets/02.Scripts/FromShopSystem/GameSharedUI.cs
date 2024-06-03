@@ -11,10 +11,12 @@ public class GameSharedUI : MonoBehaviour
 	//Awake 함수에서 Singleton 패턴구현
 	void Awake ()
 	{
+		
 		//Instance가 null이면 현재 인스턴스를 할당
 		if (Instance == null) {
 			Instance = this;
 		}
+
 	}
 
 	#endregion
@@ -23,7 +25,7 @@ public class GameSharedUI : MonoBehaviour
 	[SerializeField] TMP_Text[] coinsUIText;
 	
 	
-
+	
 	//게임 시작시 호출되는 함수
 	void Start ()
 	{
