@@ -194,7 +194,7 @@ public class CharacterShopUI : MonoBehaviour
         SelectItemUI(index);
 
         // set selectedCharacter Image at the top of shop menu 맨위 캐릭터 선택
-        // selectedCharacterIcon.sprite = characterDB.GetCharacter(index).image;
+         selectedCharacterIcon.sprite = characterDB.GetCharacter(index).image;
 
         //SaveData
         GameDataManager.SetSelectedCharacter(characterDB.GetCharacter(index), index);
