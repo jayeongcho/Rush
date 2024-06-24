@@ -21,15 +21,15 @@ MonoBehaviour:
   - image: {fileID: 21300000, guid: 05055353e5b9abe40ab9366bcb11f70f, type: 3}
     name: male_B
     speed: 7
-    price: 500
+    price: 5000
     isPurchased: 1
   - image: {fileID: 21300000, guid: c7f7edb0e33003644bc931f37ae1fb39, type: 3}
     name: female
     speed: 8
-    price: 1000
+    price: 10000
     isPurchased: 1
   - image: {fileID: 21300000, guid: 21af60a7cdd6e5b42a0fab77e7ae541a, type: 3}
     name: Police
     speed: 9
-    price: 1500
+    price: 15000
     isPurchased: 0
